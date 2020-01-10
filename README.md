@@ -13,44 +13,44 @@ Well, truthfully the inspiration came from me trying to challenge myself and be 
 **How It Works**
 **Installation**
 
-- 1. **pip install genuine-fake**
+1. ***pip install genuine-fake***
 
 **Importing the necessary module**
 
-- 2. from genuine.fake import GenuineFake
+2. from genuine.fake import GenuineFake
 
 **Assigning GenuineFake to a variable named genuine**
 
-- 3. genuine = GenuineFake
+3. genuine = GenuineFake
 
 **Calling the name function, name contains full names**
 
-- 4. genuine.name()
-**'Andile Mbele'**
+4. genuine.name()
+***'Andile Mbele'***
 
 **Calling the first_name function**
 
-- 5. genuine.first_name()
-**'Andile'**
+5. genuine.first_name()
+***'Andile'***
 
 **Calling the first_name function**
 
-- 6. genuine.last_name()
-**'Moyo'**
+6. genuine.last_name()
+***'Moyo'***
 
 **Author Information**
 
-- 7. genuine.__author__
-**'Andile Jaden Mbele'**
+7. genuine.__author__
+***'Andile Jaden Mbele'***
 
-- 8. genuine.__email__
-**'andilembele020@gmail.com'**
+8. genuine.__email__
+***'andilembele020@gmail.com'***
 
-- 9. genuine.__package__
-**'genuine-fake'**
+9. genuine.__package__
+***'genuine-fake'***
 
-- 10. genuine.Author
-**'Andile Jaden Mbele'**
+10. genuine.Author
+***'Andile Jaden Mbele'***
 
 **Other functions include**
 

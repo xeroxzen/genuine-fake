@@ -10,7 +10,7 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name= "genuine-fake",
-    version="1.1.1",
+    version="1.1.2",
     description="Get genuine data for your testing needs in a blink of an eye.",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -26,9 +26,4 @@ setup(
     packages=["genuine"],
     include_package_data=True,
     install_requires=[],
-    # entry_points={
-    #     "console_scripts": [
-    #         "chameleon",
-    #     ]
-    # },
 )
