@@ -26,31 +26,31 @@ Well, truthfully the inspiration came from me trying to challenge myself and be 
 **Calling the name function, name contains full names**
 
 4. genuine.name()
-***'Andile Mbele'***
+- ***'Andile Mbele'***
 
 **Calling the first_name function**
 
 5. genuine.first_name()
-***'Andile'***
+- ***'Andile'***
 
 **Calling the first_name function**
 
 6. genuine.last_name()
-***'Moyo'***
+- ***'Moyo'***
 
 **Author Information**
 
 7. genuine.__author__
-***'Andile Jaden Mbele'***
+- ***'Andile Jaden Mbele'***
 
 8. genuine.__email__
-***'andilembele020@gmail.com'***
+- ***'andilembele020@gmail.com'***
 
 9. genuine.__package__
-***'genuine-fake'***
+- ***'genuine-fake'***
 
 10. genuine.Author
-***'Andile Jaden Mbele'***
+- ***'Andile Jaden Mbele'***
 
 **Other functions include**
 
