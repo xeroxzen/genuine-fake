@@ -14,7 +14,7 @@ setup(
     description="Get genuine data for your testing needs in a blink of an eye.",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/xeroxzen/chameleon",
+    url="https://github.com/xeroxzen/genuine-fake",
     author="Andile Mbele",
     author_email="andilembele020@gmail.com",
     license="MIT",
@@ -23,7 +23,7 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
     ],
-    packages=["genuine-fake"],
+    packages=["genuine"],
     include_package_data=True,
     install_requires=[],
     # entry_points={

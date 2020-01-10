@@ -9,39 +9,39 @@ from . import data_list
 from random import choice, randint
 import random, string, datetime
 
-class Deepfake(object):
+class GenuineFake(object):
     def __init__(self):
 
         """
-        >>> Deepfake.national_id()
+        >>> GenuineFake.national_id()
         '08-2127709X35'
-        >>> Deepfake.name()
+        >>> GenuineFake.name()
         'Andile Mbele'
-        >>> Deepfake.first_name()
+        >>> GenuineFake.first_name()
         'Michael'
-        >>> Deepfake.phone_number()
+        >>> GenuineFake.phone_number()
         '+263 73 149 4401'
-        >>> Deepfake.name()
+        >>> GenuineFake.name()
         'Mercy Mandela'
-        >>> Deepfake.name()
+        >>> GenuineFake.name()
         'Chad Makonese'
 
-        # Assigning Deepfake to variable named fake
-        >>> fake = Deepfake
-        >>> fake.medical_professions()
+        # Assigning GenuineFake to variable named fake
+        >>> genuine = GenuineFake
+        >>> genuine.medical_professions()
         'Medical Surgery Nurse'
-        >>> fake.medical_professions()
+        >>> genuine.medical_professions()
         'Podiatrist'
-        >>> fake.medical_professions()
+        >>> genuine.medical_professions()
         'Chiropractor'
 
-        >>> fake.career()
+        >>> genuine.career()
         'Bank Teller'
-        >>> fake.career()
+        >>> genuine.career()
         'Pharmacist'
-        >>> fake.career()
+        >>> genuine.career()
         'Statistician'
-        >>> fake.career()
+        >>> genuine.career()
         'Physician'
 
         """
@@ -50,8 +50,8 @@ class Deepfake(object):
 
     def name():
         """
-        >>> fake = Deepfake
-        >>> fake.name()
+        >>> genuine = GenuineFake
+        >>> genuine.name()
         'Doreen Dlamini'
 
         """
@@ -64,7 +64,7 @@ class Deepfake(object):
 
     def first_name():
         """
-        >>> fake.first_name()
+        >>> genuine.first_name()
         'Mongezi'
         """
         choice_name = data_list.common_names
@@ -76,7 +76,7 @@ class Deepfake(object):
 
     def last_name():
         """
-        >>> fake.last_name()
+        >>> genuine.last_name()
         'Sikhosana'
         """
         chosen_name = data_list.common_surnames
@@ -231,4 +231,4 @@ class Deepfake(object):
 
 
 if __name__ == '__main__':
-   data = Deepfake
+   data = GenuineFake
