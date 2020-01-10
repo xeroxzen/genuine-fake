@@ -15,7 +15,7 @@ setup(
     long_description=README,
     long_description_content_type="text/markdown",
     url="https://github.com/xeroxzen/genuine-fake",
-    author="Andile Mbele",
+    author="Andile Jaden Mbele",
     author_email="andilembele020@gmail.com",
     license="MIT",
     classifiers=[
