@@ -1,0 +1,292 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu December  19 14:10:59 2019
+
+@author: Andile XeroxZen
+"""
+
+common_names = [
+    'Andile', 'Ayanda', 'Anele', 'Anesu', 'Bheki', 'Beke', 'Busi', 'Donna', 'Zezu', 'Sia', 'Simoe', 'Sarah', 'Peter', 'Melissa', 'Nobuhle', 'Nokuzola', 'Mzimkhulu', 'Amanda', 'Vuyolwenkosi', 'Romy', 'Tinashe', 'Tanya', 'Aldrin', 'ASHLEY', 'Joseph', 'Tinotenda', 'kelvin', 'Kim', 'Panashe', 'Nia', 'Tatenda', 'Kayla', 'Prayer', 'Mzingaye', 'bule', 'Ropa', 'Hearty', 'Pauline', 'Engel', 'Sophie', 'alex','NATALY', 'kida', 'Nomanqoba', 'Eric','tanya', 'naty', 'Selena', 'Nkosikhona', 'Nkosiyabo', 'Mziyanda', 'Mhlanguli', 'Melithemba', 'Menelisi', 'Evelyn', 'Ruth', 'Amy', 'Mandy', 'Penny', 'Madonna', 'Brittney', 'Juliana', 'Juliette', 'Juliet', 'Samora', 'Samuel', 'Lindani', 'Thembelani', 'Thembeka', 'Phumzile', 'Nandipa', 'Nandipha', 'Terence', 'Jaden', 'Jason', 'Misheck', 'Abel', 'Tom', 'Keith', 'Nigel', 'Darlington', 'Prince', 'Ben', 'Brighton', 'Thandolwenkosi', 'Thandiwe', 'Ruramai', 'Farai', 'Tisdale', 'Chad', 'Lastborn', 'Kudakwashe', 'Mduduzi', 'Sibonisiwe', 'Sibonakele', 'Sipho', 'Sihle', 'Cynthia', 'Celia', 'Cecilia', 'Drake', 'Dumoluhle', 'Dumisani', 'Anderson', 'Dumezweni', 'Vikani', 'Vuyisile', 'Vuyani', 'Vumile', 'Mbangisi', 'Mbonisi', 'Mbongeni', 'Devon', 'Jasper', 'Michelle', 'Carol', 'Sam', 'Sicelo', 'Simosethu', 'Simosenkosi', 'Mary', 'Maryln', 'Marlene', 'Vusa', 'Vusumuzi', 'Albert', 'Utile', 'Shantelle', 'Chantel', 'Charmaine', 'Shamiso', 'Shylet', 'Nyasha', 'Wisbert', 'Obert', 'Noel', 'Noah', 'Nozipho', 'Nokukhanya', 'Babalwa', 'Leeroy', 'Jabulani', 'Irene', 'Mangosuthu', 'Sasha', 'Nobantu', 'Gugulethu', 'Duduzile', 'Siduduzile', 'Munyaradzi', 'Mayibongwe', 'Mongezi', 'Itai', 'Brett', 'Brandon', 'Brendon', 'Eulitha', 'Shona', 'Doreen', 'Dorothy', 'Gabriel', 'Gabriella', 'Ndumiso', 'Nondumiso', 'Bhekumusa', 'Njabulo', 'Clifford', 'Herbert', 'Stanley', 'Stanford', 'Sithabile', 'Sithandazile', 'Sithatshisiwe', 'Nomsa', 'Nobuntu', 'Zenande', 'Susan', 'Susanna', 'Grace', 'Sally', 'Auxillia', 'Thokozani', 'Thokozile', 'Belinda', 'Samantha', 'Joshua', 'John', 'Peter', 'Akim', 'Achim', 'Nick', 'Jadyn', 'Scott', 'Lionel', 'Ronald', 'Belta', 'Maurine', 'Mondli', 'Thobelikhaya', 'Thobelumzi', 'Olwethu', 'Shanae', 'Leona', 'Princess', 'Lihle', 'Hlelile', 'Janet', 'Nolwazi', 'Melody', 'Monwabisi', 'Humphrey', 'Leonard', 'Len', 'Charles', 'Charlie', 'Charlene', 'Gracious', 'Petra', 'Petronella', 'Junior', 'Tiana', 'Cyril', 'Miley', 'Rihanna', 'Donna', 'Donald', 'Jeremiah', 'Andrew', 'Anders', 'Robert', 'Emmanuel', 'Nelson', 'Emmerson', 'Jonathan', 'Velisile', 'Velile', 'Nomvula', 'Nkosentsha', 'Naomi', 'Ruth', 'Gertrude', 'Iza', 'Yoleeswa', 'Vaida', 'Faith', 'Patience', 'Millicent', 'Tonderai', 'Tongai', 'Justin', 'Catherine', 'Concelia', 'Ida', 'Donnel',' Zeus', 'Queen', 'King', 'Carl', 'Charlington', 'Kudzai', 'Kudzi', 'Zandile', 'Emmy', 'Jacqueline', 'Jessica', 'Jesse', 'Lorraine', 'Sikhanyisiwe', 'Sharon', 'Zolisile', 'Zolile', 'Bongani', 'Zabe', 'Makanaka', 'James', 'Sean', 'Irvine', 'Evans', 'Jenny', 'Tania', 'Petrolater', 'Mal', 'Dani', 'Daniel', 'Lynnet', 'Joyful', 'Joylene', 'Theo', 'Theodore', 'Wayne', 'Kelly', 'Takura', 'Takunda', 'Tanatswa', 'Mercy', 'Harmony', 'Tariro', 'Chichi', 'Lisa', 'Clayt', 'Arani', 'Morgan', 'Theresa', 'Malcolm', 'Laue', 'Simelinkosi', 'Suave', 'Marko', 'Steven', 'Stephanie', 'Lexi', 'Obriel', 'Hassan', 'Nakai', 'Cherrie', 'Tinevimbo', 'Aaron', 'AJ', 'Ane', 'Anne', 'Tadiwanashe', 'Clement', 'Carita', 'Charity', 'Victor', 'Elsa', 'Precious', 'Tawanda', 'Brian', 'Innocent', 'Tendai', 'Mandla', 'Mandlenkosi', 'Simba', 'Zenith', 'Angela', 'Clite', 'Clyte', 'Aisha', 'Nesta', 'Mike', 'Jordan', 'Elizabeth', 'Tavonga', 'Lonely', 'Nicky', 'Noela', 'Sheline', 'Jordan', 'Mukudzei', 'Jagger', 'Nesta', 'Gerald', 'Anesu', 'Godwin', 'Mitchelle', 'Petros', 'Lerato', 'Edward', 'Tammy', 'Tiara', 'Adrain', 'Elijah', 'Tanaka', 'Godwin', 'Emma', 'Nesta', 'Kellington', 'Nikolai', 'Lindsay', 'Peace', 'Kimberley', 'Tawonga', 'Stellar', 'Roselyn', 'Allie', 'Thabani', 'Makhosini', 'Ronny', 'Unathi', 'Admire', 'Ntandoe', 'Vince', 'Liam', 'Hope', 'Ronald', 'Rue', 'Privilege', 'Anopa', 'Gamuchirai', 'Tengerai', 'Isabel', 'Ali', 'Chengetai', 'Shaniqi', 'Mufaro', 'Marcia', 'Isabella', 'Wendy', 'Agatha', 'William', 'Bob', 'Bill', 'Harvey', 'Abigirl', 'Esther', 'Adam', 'Eve', 'Siphiwe', 'Godfrey', 'Emerge', 'Sydney'
+
+]
+
+common_surnames = [
+    'Moyo', 'Nyathi', 'Dube', 'Sibanda', 'Mdlongwa', 'Ndlovu', 'Ndhlovu', 'Mbele', 'Stinta', 'Ncube', 'Mugabe', 'Shoko,', 'Chamisa',  'Khumalo', 'Nxumalo', 'Ncube', 'Sibanda', 'Moyo', 'Ndlovu', 'Mkhwananzi', 'Bhebhe', 'Dlodlo','Dube', 'Nkala', 'Nkomo', 'Tshuma', 'Mvundla', 'Ndebele', 'Khuphe', 'Nkiwane', 'Sibindi', 'Nyathi', 'Mpofu', 'Hlabangane', 'Siziba', 'Ngwenya', 'Mathuthu', 'Mangena', 'Chafa', 'Charumbira', 'Mandela', 'Mnangagwa', 'Mangwana', 'Khuboni', 'Nyilika', 'Nyoni', 'Garanganga', 'Hatendi', 'Kachingwe','Mabuwa','Mangwende','Manyuchi','Mapfumo','Mariga', 'Mupfumira', 'Musambasi', 'Ndandarika', 'Nyakasikana', 'Nyandoro', 'Tongofa', 'Nkabinde', 'Musa', 'Dlamini', 'Makaza', 'Mafara', 'Marara', 'Sikhosana', 'Olsen', 'Coltart', 'Biti', 'Tsvangirai', 'Makoni', 'Makonese', 'Chibvu', 'Mali', 'Dywili', 'Mlambo', 'Nxusani', 'Ntuli', 'Phiri', 'Maphosa', 'Kheswa'
+    ]
+
+medical_aid = [
+    'For All Medical Aid Society', 'Varichem Limited Medical Fund', 'Steward Health Medical Benefit Fund', 'Save Life Medical Aid Fund', 'Pro Health Medical Aid Society', 'Parksmed Health Fund', 'Genfin Medical Aid Fund', 'Corporate 24 Medical Aid', 'Calm Health International Medical Aid So', 'Advantage Health Medical Aid Society', 'Med Assist Medical Aid Scheme', 'Evolution Health & Life Assurance', 'Medtours Africa', 'Zimbabwe General Medical Aid Fund (Zigma)', 'Agricultural Medical Aid Society (Agrim)', 'Eternal Peace Health', 'Premier Service Medical Aid Society', 'Bonvie Medical Aid Scheme', 'Cellmed Health Medical Fund', 'Blanket Mine Medical Aid Society', 'Emf Medical Aid Society', 'Fidelity Life Medical Aid Society', 'First Mutual Medical Savings Fund', 'Fmre Life And Health (Pvt) Ltd', 'Generation Health Medical Fund', 'Harare Municipality Medical Aid Society', 'Kwekwe City Council Medical Aid Society', 'Liberty Health Medical Aid Society' , 'Masvingo Municipal Medical Aid Society', 'Medical Aid Society Of Central Africa', 'Municipality Of Bulawayo Medical Aid Society', 'National Social Security Authority', 'Railmed', 'Northern Medical Aid Society', 'Sovereign Health (Pvt) Ltd'
+]
+
+places = [
+	'New Luveve, Bulawayo', 'Cowdry Park', 'Pumula', 'Mahatshula', 'Nkulumane', 'Sunninghill', 'Hillside', 'Hillcrest', 'Burnside', 'Douglasdale', 'Entumbane', 'Northend', 'Harrisvale', 'Mbundane', 'Masasa', 'Borrowdale Brook', 'Mbare', 'Mt Pleasant', 'Makokoba', 'Mzilikazi', 'Lobengula', 'Malindela', 'Tshabalala', 'Old Luveve', 'Gwabalanda', 'Emganwini', 'Nketa', 'Trenance'
+]
+
+streets = [
+		'Pine Road', 'Graham Road', 'L-Street Road', 'Alexander Road', 'Casper Road', 'President Road', 'State House Ave', 'Jason Moyo Ave', 'Joshua Nkomo Road', 'Prinsloo Road', 'Game Free Road', 'Brentwood Road', 'Ellison Road', 'University Road', 'Norwark Road', 'Mbare Road'
+	]
+
+hospital = [
+	'Arcadia Medical Centre',
+	'The Avenues Clinic',
+	'Baines Avenue Clinic',
+	'Baines IntercareE Medical Centre, 15 Baines Avenue',
+	'Beatrice Road Infectious Diseases',
+	'Belvedere Maternity',
+	'Belvedere Medical Centre',
+	'BMC Hospital, 2 dendy young',
+	'Central Harare Hospital',
+	'Citimed Chitungwiza Hospital',
+	'Corporate 24 Medical Centre',
+	'Dandaro Clinic',
+	'Diagnostic Heart Center',
+	'Harare Hospital',
+	'Harare Maternity',
+	'Highfield Poly Clinic',
+	'Marlborough Medical Centre',
+	'Mbuya Docus Hospital',
+	'Med24 Medical Centre',
+	'Metropolitan Clinic',
+	'The Michael Gelfand Clinic',
+	'The Montague Clinic',
+	'New Cranborne Maternity Clinic',
+	'Oncocare',
+	'Parirenyatwa Hospital',
+	'Queen of Peace Clinic',
+	'Rock Foundation Medical Center',
+	'Sekuru Kaguvi Hospital',
+	"St. Anne's Hospital",
+	'Suburban Medical Center',
+	'Trauma Centre & Hospital',
+	'West End Clinic',
+	'West End Hospital',
+	'Wilkins Hospital',
+	
+	'Mpilo Central Hospital',
+	'Mater Dei  Hospital',
+	'United Bulawayo Hospitals',
+	'Inyathi Hospital',
+	'Ingutsheni Psychiatric Hospital',
+
+	'Avila Mission Hospital',
+	'Bonda Mission Hospital',
+	'Chikore Hospital',
+	'Chipinge District Hospital',
+	'Elim Mission Hospital',
+	'Hauna Hospital',
+	'Mount Melleray Mission Hospital',
+	'Mount Selinda Hospital',
+	"Murambi Hospital",
+	"Murambinda Mission Hospital",
+	"Mutambara Mission Hospital",
+	"Mutare Provincial Hospital",
+	"Nyanga District hospital",
+	"Regina Coeli Mission Hospital",
+	"Rusape General Hospital",
+	"Rusitu Mission Hospital",
+	"St Peter's Checheche",
+	"Clay Bank Group of Hospitals",
+		
+	"Gokwe District Hospital",
+	"Gweru Provincial General Hospital",
+	"Kwekwe General Hospital",
+	"Mnene Hospital",
+	"St Gerald Chaya General Hospital",
+	"Shurugwi District Hospital",
+	"Zvishavane District Hospital",
+
+	"Beit-Brige District Hospital",
+	"Brunapeg st annes Mission Hospital",
+	"Esigodini District Hospital",
+	"Filabusi District Hospital",
+	"Gwanda Provincial Hospital",
+	"Kezi rural Hospital",
+	"Manama Mission Hospital",
+	"Maphisa District Hospital",
+	"Mtshabezi Mission Hospital",
+	"Plumtree District Hospital",
+	"Tshelanyemba Mission Hospital",
+
+	"All Souls Mission Hospital",
+	"Borrowdale Trust Hospital",
+	"Chivhu General Hospital",
+	"Kotwa Hospital",
+	"Mahusekwa Hospital",
+	"Makumbi Hospital",
+	"Marondera Provincial Hospital",
+	"Mutawatawa General Hospital",
+	"Mutoko Hospital",
+	"Nhowe Mission Hospital",
+	"Nyadire Mission Hospital",
+	"Sadza General Hospital",
+
+	"Binga District Hospital",
+	"Dakamela Rural District Hospital",
+	"Lukosi Hospital",
+	"Hwange Colliery Hospital",
+	"Hwange Medical Centre (Baobab Hill)",
+	"Mbuma Mission Hospital",
+	"Nkayi Rural District Hospital",
+	"St Luke's Hospital",
+	"St Mary's Hospital",
+	"St Patrick's Hospital",
+	"Tsholotsho District Hospital",
+	"Victoria Falls Hospital",
+
+	"Alheit Hospital (Gutu)",
+	"Bondolfi Hospital (Masvingo)",
+	"Chiredzi Hospital (Chiredzi)",
+	"Chivi Hospital (Chivi)",
+	"Dewure Clinic (Gutu)",
+	"Driefontein Hospital (Chartsworth)",
+	"Gutu District Hospital (Mpandawana)",
+	"Gutu Mission Hospital (Gutu)",
+	"Mashoko Hospital (Bikita)",
+	"Masvingo General Hospital",
+	"Morgenster Mission Hospital (Masvingo)",
+	"Mutero Mission Clinic (Gutu)",
+	"Mwenezi Hospital (Mwenezi)",
+	"Ndanga Hospital (Zaka)",
+	"Nemanwa Clinic (Masvingo)",
+	"Ngoma Huru Hospital",
+	"Silveira Mission (Bikita)",
+	"St Antony's Musiso Hospital (Zaka)",
+
+	"Banket District Hospital",
+	"Chegutu District Hospital",
+	"Chidamoyo Mission Hospital",
+	"Chinhoyi Provincial Hospital",
+	"Darwendale Rural Hospital",
+	"Father 'O' Hea Memorial Mission Hospital",
+	"Kadoma General Hospital",
+	"Kariba District Hospital",
+	"Karoi District Hospital",
+	"Magunje Rural Hospital",
+	"Mutorashanga Rural Hospital",
+	"Raffingora Rural Hospital",
+	"Sanyati Baptist Hospital",
+	"St Michael's Hospital",
+	"Zvimba Rural Hospital",
+
+	"Bindura Provincial Hospital - Bindura District",
+	"Chimhanda District Hospital",
+	"Chitsungo Mission Hospital - Mbire District",
+	"Concession District Hospital",
+	"Guruve Hospital - District",
+	"Howard Hospital",
+	"Karanda Mission Hospital - Mount Darwin District",
+	"Madziwa Hospital - Shamva District",
+	"Mary Mount Mission Hospital - Rushinga District",
+	"Mt Darwin District Hospital",
+	"Mvurwi Hospital - Mazowe District",
+	"Nhowe Hospital",
+	"PSMI Medical Clinic - Bindura",
+	"Shamva Hospital - Shamva District",
+	"Shashi Private Hospital - Bindura",
+	"St Alberts Mission Hospital"
+]
+
+company = [
+    'Datlabs', 'National Social Security Authority', 'Innscor', 'Econet Wireless', 'TelOne', 'Bakers Inn', 'Lobels', 'Zimplats', 'CBZ Holdings', 'CABS', 'Delta Beverages', 'Stanbic Bank', 'FBC Holdings', 'Standard Charteresd Bank', 'OLD Mutual (ZW)', 'ZB Financial Holdings', 'AICO', 'NMBZ', 'Hippo Valley Estates', 'Meikles', 'Barclays Bank', 'Hwange Coal', 'Mwana Africa', 'MBCA', 'SeedCo', 'Zimre Property', 'Masawara', 'First Mutual Holdings', 'Dairibord', 'RioZim', 'OK Zimbabwe', 'Natfoods', 'CFI Holdings', 'Padenga', 'Cassava Smartech', 'Telecel ZW', 'NetOne'
+]
+
+career = [
+    'Medical Doctor', 'Computer Programmer', 'School Teacher', 'Policy Maker', 'Metarlugical Engineer', 'Chemist', 'Lawyer', 'Bank Teller', 'Till Operator', 'Janitor', 'General Hand', 'Security Guard', 'Physician', 'Software Developer', 'Statistician', 'Technician', 'Physiotherapist', 'Nurse Practitioner', 'Labourer', 'Teacher', 'Lecturer', 'Researcher', 'Pharmacist', 'Nurse', 'Nurse anaesthetist', 'Surgeon', 'Physician Assistant', 'Police Officer', 'Mathematician', 'Gynaecologist', 'Bio Engineer', 'Chemist', ''
+]
+
+career_position = [
+    'Programs Manager', 'Chief Executive Officer', 'Head Teller', 'Vice President of Engineering', 'VP of Product Development', 'Book Keeper', 'Accountant', 'Senior Engineer', 'Head Master', 'Head Mistress', 'Head of Department', 'Chairman', 'President', 'Co-CEO', 'Co-Chairman', 'Secretary', 'Secretary General', 'Data Entry Clerk', 'Manager', 'Personal Assistant', 'Chauffeur', 'Book Keeer', 'Librarian', 'Chief Librarian', 'Till Operator'
+]
+
+medical_roles = [
+    "Ambulatory Nurse",
+	"Anesthesiologist",
+	"Audiologist",
+	"Behavioral Health Charge Nurse",
+	"Bereavement Counselor",
+	"Cardiac Catheterization Lab Nurse",
+	"Cardiovascular Operating Room Nurse",
+	"Cardiovascular Technologist",
+	"Charge Nurse",
+	"Chiropractor",
+	"Counselor",
+	"Dentist",
+	"Dermatology Nurse",
+	"Dialysis Nurse",
+	"Doctor",
+	"Emergency Room Nurse",
+	"Endoscopy Nurse",
+	"Family Nurse Practitioner",
+	"Flight Nurse",
+	"Genetic Counselor",
+	"Home Health Nurse",
+	"Hospice Counselor",
+	"Hospice Nurse",
+	"House Supervisor Nurse",
+	"Intensive Care Nurse",
+	"Interventional Radiology Nurse",
+	"Labor and Delivery Nurse",
+	"Lead Registered Nurse",
+	"Legal Nurse Consultant",
+	"Licensed Practical Nurse",
+	"Licensed Vocational Nurse",
+	"Medical Surgery Nurse",
+	"Microbiologist",
+	"Neonatal Intensive Care Nurse",
+	"Nurse",
+	"Nurse Anesthetist",
+	"Nurse Midwife",
+	"Nurse Practitioner",
+	"Nursing Assistant",
+	"Occupational Health Nurse",
+	"Occupational Health and Safety Specialist",
+	"Occupational Therapist",
+	"Office Nurse",
+	"Oncology Nurse",
+	"Operating Room Nurse",
+	"Optician",
+	"Optometrist",
+	"Orthodontist",
+	"Orthotist",
+	"Outreach RN",
+	"Paramedic",
+	"Pediatrician",
+	"Pediatric Endocrinology Nurse",
+	"Pediatric Intensive Care Nurse",
+	"Pediatric Nurse",
+	"Pediatric Nurse Practitioner",
+	"Perioperative Nurse",
+	"Pharmacist",
+	"Prosthetist",
+	"Physician",
+	"Podiatrist",
+	"Post Anesthesia Nurse",
+	"Postpartum Nurse",
+	"Progressive Care Nurse"
+	"Psychiatric Nurse",
+	"Psychiatric Nurse Practitioner"
+	"Public Health Nurse",
+	"Registered Nurse (RN)",
+	"Registered Nurse (RN) Case Manager",
+	"Registered Nurse(RN) Data Coordinator",
+	"Registered Nurse (RN) First Assistant",
+	"Registered Nurse (RN) Geriatric Care",
+	"Registered Nurse (RN) Medical Inpatient Services",
+	"Registered Nurse (RN) Patient Call Center",
+	"Registered Nurse (RN) Student Health Services",
+	"Registered Nurse (RN) Telephone Triage",
+	"Registered Nurse (RN) Urgent Care",
+	"Registered Nurse (RN) Women's Services",
+	"Restorative Nurse",
+	"Registered Medical Assistant",
+	"Respiration (Inhalation) Therapist",
+	"School Nurse",
+	"Speech-Language Pathologist",
+	"Surgeon",
+	"Telemetry Nurse",
+	"Therapist",
+	"Veterinarian",
+	"Veterinary Assistant",
+	"Veterinary Technologist",
+	"Wellness Nurse"
+]
