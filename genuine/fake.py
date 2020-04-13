@@ -97,24 +97,18 @@ class GenuineFake(object):
         return currentDate.strftime("%Y-%m-%d")
 
     def random_date():
-         day = range(1, 32)
-         month = range(1, 13)
-         year = range(1900, 2020)
-         actual_day = random.choice(day)
-         actual_month = random.choice(month)
-         actual_year = random.choice(year)
-         date = str(actual_year) + '-' + str(actual_month) + '-' + str(actual_day)
-         return date
+         pos_day = range(1, 31)
+         pos_month = range(1, 13)
+         pos_year = range(1960, 2020)
+        
+         return datetime.date(random.choice(pos_year), random.choice(pos_month), random.choice(pos_day)).strftime("%Y-%m-%d")
 
     def date_of_birth():
-         day = range(1, 32)
-         month = range(1, 13)
-         year = range(1900, 2020)
-         actual_day = random.choice(day)
-         actual_month = random.choice(month)
-         actual_year = random.choice(year)
-         birthday = str(actual_year) + '-' + str(actual_month) + '-' + str(actual_day)
-         return birthday
+         pos_day = range(1, 31)
+         pos_month = range(1, 13)
+         pos_year = range(1960, 2020)
+         
+         return datetime.date(random.choice(pos_year), random.choice(pos_month), random.choice(pos_day)).strftime("%Y-%m-%d")
 
     def national_id():
         """

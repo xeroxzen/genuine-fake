@@ -1,6 +1,10 @@
 MANIFEST.in
 README.md
 setup.py
+Genuine_fake.egg-info/PKG-INFO
+Genuine_fake.egg-info/SOURCES.txt
+Genuine_fake.egg-info/dependency_links.txt
+Genuine_fake.egg-info/top_level.txt
 genuine/__init__.py
 genuine/data_list.py
 genuine/data_list.txt
