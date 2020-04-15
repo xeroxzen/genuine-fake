@@ -10,8 +10,8 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name= "Genuine-fake",
-    version="1.1.5",
-    description="Get genuine data for your testing needs in a blink of an eye.",
+    version="1.1.8",
+    description="Get genuine data for your testing requirements.",
     long_description=README,
     long_description_content_type="text/markdown",
     url="https://github.com/xeroxzen/genuine-fake",

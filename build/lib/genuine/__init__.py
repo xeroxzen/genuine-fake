@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-
-Author = 'Andile Jaden Mbele'
-Email = 'andilembele020@gmail.com'
-Github='www.github.com/xeroxzen/chameleon'
-
-__author__ = Author
-__email__ = Email
-__github__ = Github
+__author__ = 'Andile Jaden Mbele'
+__email__ = 'andilembele020@gmail.com'
+__github__ = 'https://github.com/xeroxzen/genuine-fake'
+__package__ = 'genuine-fake'
