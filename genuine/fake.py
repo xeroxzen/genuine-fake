@@ -13,8 +13,9 @@ from random import choice, randint
 from . import data_list
 
 
+# noinspection PyUnusedLocal
 class GenuineFake:
-    def __init__(self):
+    def __init__(self=None):
         """
         >>> from genuine.fake import GenuineFake
         >>> GenuineFake.national_id()
@@ -49,52 +50,50 @@ class GenuineFake:
         'Physician'
         """
 
-        return self
-
-    def name(self):
+    @staticmethod
+    def name():
         """
         >>> genuine = GenuineFake
         >>> genuine.name()
         'Doreen Dlamini'
 
         """
-        name = choice(data_list.common_names) + ' ' + choice(data_list.common_surnames)
-        choice_name = name
-        return choice_name
+        name_data = choice(data_list.common_names) + ' ' + choice(data_list.common_surnames)
+        name = name_data
+        return name
 
-    def first_name(self):
+    @staticmethod
+    def first_name():
         """
         >>> from genuine.fake import GenuineFake
         >>> genuine = GenuineFake
         >>> genuine.first_name()
         'Mongezi'
         """
-        choice_name = data_list.common_names
-        pick = random.choice(choice_name)
-        return pick
+        first_name_data = data_list.common_names
+        first_name = random.choice(first_name_data)
+        return first_name
 
-    def last_name(self):
+    @staticmethod
+    def last_name():
         """
         >>> from genuine.fake import GenuineFake
         >>> genuine = GenuineFake
         >>> genuine.last_name()
         'Sikhosana'
         """
-        chosen_name = data_list.common_surnames
-        pick = random.choice(chosen_name)
-        return pick
+        last_name_data = data_list.common_surnames
+        last_name = random.choice(last_name_data)
+        return last_name
 
-    def gender(self):
+    @staticmethod
+    def gender():
         possibilities = ["male", "female"]
         sex = random.choice(possibilities)
         return sex
 
-    def date(self):
-        current_date = datetime.date.today()
-        # days_date = current_date
-        return current_date.strftime("%Y-%m-%d")
-
-    def random_date(self):
+    @staticmethod
+    def random_date():
         pos_day = range(1, 31)
         pos_month = range(1, 13)
         pos_year = range(1960, 2020)
@@ -102,7 +101,8 @@ class GenuineFake:
         return datetime.date(random.choice(pos_year), random.choice(pos_month), random.choice(pos_day)).strftime(
             "%Y-%m-%d")
 
-    def date_of_birth(self):
+    @staticmethod
+    def date_of_birth():
         pos_day = range(1, 31)
         pos_month = range(1, 13)
         pos_year = range(1960, 2020)
@@ -110,7 +110,8 @@ class GenuineFake:
         return datetime.date(random.choice(pos_year), random.choice(pos_month), random.choice(pos_day)).strftime(
             "%Y-%m-%d")
 
-    def national_id(self):
+    @staticmethod
+    def national_id():
         """
         >>> from genuine.fake import GenuineFake
         >>> fake = GenuineFake
@@ -122,7 +123,9 @@ class GenuineFake:
         set3 = string.ascii_uppercase
         set4 = string.digits
 
+        i: int
         issued_set1 = "".join(choice(set1) for i in range(randint(2, 2)))
+        j: int
         issued_set2 = "".join(choice(set2) for j in range(randint(6, 7)))
         issued_set3 = "".join(choice(set3) for k in range(randint(1, 1)))
         x: int
@@ -131,7 +134,8 @@ class GenuineFake:
         issued_id = issued_set1 + '-' + issued_set2 + issued_set3 + issued_set4
         return issued_id
 
-    def address(self):
+    @staticmethod
+    def address():
         house_no = string.digits
         house_num = "".join(choice(house_no) for x in range(randint(1, 5)))
         place = data_list.places
@@ -141,7 +145,8 @@ class GenuineFake:
 
         return chosen_address
 
-    def phone_number(self):
+    @staticmethod
+    def phone_number():
         country_code = '+263'
         network_code = ['77', '73', '71']
 
@@ -154,7 +159,8 @@ class GenuineFake:
         phone_number = country_code + ' ' + random.choice(network_code) + ' ' + code1 + ' ' + code2
         return phone_number
 
-    def email(self):
+    @staticmethod
+    def email():
         first_name = choice(data_list.common_names)
         last_name = choice(data_list.common_surnames)
         user_name = first_name.lower() + last_name.lower()
@@ -164,40 +170,53 @@ class GenuineFake:
         # Want to include _, #s
         return mail_address
 
-    def medical_aid(self):
+    @staticmethod
+    def medical_aid():
         medical_aid_data = data_list.medical_aid
         medical_scheme = random.choice(medical_aid_data)
         return medical_scheme
 
-    def allergies(self):
+    @staticmethod
+    def allergies():
         allergies_data = data_list.allergens
         allergy = random.choice(allergies_data)
         return allergy
 
+    @staticmethod
     def hospital(self):
         hospital_data = data_list.hospital
         hospital = random.choice(hospital_data)
         return hospital
 
+    @staticmethod
     def career(self):
         career_data = data_list.career
         career = random.choice(career_data)
         return career
 
+    @staticmethod
     def career_position(self):
         career_position_data = data_list.career_position
         career_position = random.choice(career_position_data)
         return career_position
 
+    @staticmethod
     def company(self):
         company_data = data_list.company
         company = random.choice(company_data)
         return company
 
+    @staticmethod
     def medical_professions(self):
         profession_data = data_list.medical_roles
         profession = random.choice(profession_data)
         return profession
+
+    @staticmethod
+    def date():
+        current_date = datetime.date.today()
+        # days_date = current_date
+        return current_date.strftime("%Y-%m-%d")
 
 
 if __name__ == '__main__':
