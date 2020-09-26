@@ -62,6 +62,8 @@ class GenuineFake(object):
 
     def first_name(self):
         """
+        >>> from genuine.fake import GenuineFake
+        >>> genuine = GenuineFake
         >>> genuine.first_name()
         'Mongezi'
         """
@@ -71,6 +73,8 @@ class GenuineFake(object):
 
     def last_name(self):
         """
+        >>> from genuine.fake import GenuineFake
+        >>> genuine = GenuineFake
         >>> genuine.last_name()
         'Sikhosana'
         """
@@ -106,6 +110,8 @@ class GenuineFake(object):
 
     def national_id(self):
         """
+        >>> from genuine.fake import GenuineFake
+        >>> fake = GenuineFake
         >>> fake.national_id()
         '15-516077P91'
         """
@@ -134,7 +140,7 @@ class GenuineFake(object):
 
     def phone_number(self):
         country_code = '+263'
-        network_code = [77, 73, 71]
+        network_code = ['77', '73', '71']
 
         set1 = string.digits
         set2 = string.digits
@@ -142,8 +148,8 @@ class GenuineFake(object):
         code1 = "".join(choice(set1) for x in range(randint(3, 3)))
         code2 = "".join(choice(set2) for x in range(randint(4, 4)))
 
-        phone_num = country_code + ' ' + random.choice(network_code) + ' ' + code1 + ' ' + code2
-        return phone_num
+        phone_number = country_code + ' ' + random.choice(network_code) + ' ' + code1 + ' ' + code2
+        return phone_number
 
     def email(self):
         first_name = choice(data_list.common_names)
@@ -168,17 +174,17 @@ class GenuineFake(object):
     def hospital(self):
         hospital_data = data_list.hospital
         hospital = random.choice(hospital_data)
-        return choice
+        return hospital
 
     def career(self):
         career_data = data_list.career
         career = random.choice(career_data)
-        return choice
+        return career
 
     def career_position(self):
         career_position_data = data_list.career_position
         career_position = random.choice(career_position_data)
-        return choice
+        return career_position
 
     def company(self):
         company_data = data_list.company
