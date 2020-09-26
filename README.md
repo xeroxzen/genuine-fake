@@ -1,7 +1,7 @@
 # Genuine-Fake documentation
 
 ### Definition
-Genuine Fake means an imitation of a (usually) valuable object that is so good that it is, to all intents and purposes, identical. Literaly genuine fake means something that is real but not real at the same time. Take it like this, it's more of a perfect replica of the original.
+Genuine Fake means an imitation of a (usually) valuable object that is so good that it is, to all intents and purposes, identical. Literally genuine fake means something that is real but not real at the same time. Take it like this, it's more of a perfect replica of the original.
 
 ### Why
 As I was building a Django app that involved forms a lot, I got tired from filling the forms and having to think of the testing data at the same time. As curious as I am I wondered if there might be a package that can handle this for me, fortunately there was one, but I didn't like it, well not because it wasn't good, it was brilliant actually but it didn't have all the necessary and broad range of data I was looking for. Then I asked myself "What now?" The decision was to write my own. I did write it within 6 hours. I have changed it's name about 3 times now, hopefully this time it will stick.
