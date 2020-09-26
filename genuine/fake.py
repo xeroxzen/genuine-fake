@@ -13,9 +13,10 @@ from random import choice, randint
 from . import data_list
 
 
-class GenuineFake(object):
+class GenuineFake:
     def __init__(self):
         """
+        >>> from genuine.fake import GenuineFake
         >>> GenuineFake.national_id()
         '08-2127709X35'
         >>> GenuineFake.name()
@@ -46,8 +47,9 @@ class GenuineFake(object):
         'Statistician'
         >>> genuine.career()
         'Physician'
-
         """
+
+        return self
 
     def name(self):
         """
@@ -121,8 +123,9 @@ class GenuineFake(object):
         set4 = string.digits
 
         issued_set1 = "".join(choice(set1) for i in range(randint(2, 2)))
-        issued_set2 = "".join(choice(set2) for x in range(randint(6, 7)))
-        issued_set3 = "".join(choice(set3) for x in range(randint(1, 1)))
+        issued_set2 = "".join(choice(set2) for j in range(randint(6, 7)))
+        issued_set3 = "".join(choice(set3) for k in range(randint(1, 1)))
+        x: int
         issued_set4 = "".join(choice(set4) for x in range(randint(2, 2)))
 
         issued_id = issued_set1 + '-' + issued_set2 + issued_set3 + issued_set4
@@ -145,8 +148,8 @@ class GenuineFake(object):
         set1 = string.digits
         set2 = string.digits
 
-        code1 = "".join(choice(set1) for x in range(randint(3, 3)))
-        code2 = "".join(choice(set2) for x in range(randint(4, 4)))
+        code1 = "".join(choice(set1) for i in range(randint(3, 3)))
+        code2 = "".join(choice(set2) for j in range(randint(4, 4)))
 
         phone_number = country_code + ' ' + random.choice(network_code) + ' ' + code1 + ' ' + code2
         return phone_number
