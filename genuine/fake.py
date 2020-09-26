@@ -114,6 +114,7 @@ class GenuineFake(object):
         set3 = string.ascii_uppercase
         set4 = string.digits
 
+        issued_set1 = "".join(choice(set1) for i in range(randint(2, 2)))
         issued_set2 = "".join(choice(set2) for x in range(randint(6, 7)))
         issued_set3 = "".join(choice(set3) for x in range(randint(1, 1)))
         issued_set4 = "".join(choice(set4) for x in range(randint(2, 2)))
@@ -132,8 +133,8 @@ class GenuineFake(object):
         return chosen_address
 
     def phone_number(self):
-        country_code = ('+263')
-        network_code = ('77', '73', '71')
+        country_code = '+263'
+        network_code = [77, 73, 71]
 
         set1 = string.digits
         set2 = string.digits
