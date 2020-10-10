@@ -107,11 +107,11 @@ hospital = [
     'Arcadia Medical Centre',
     'The Avenues Clinic',
     'Baines Avenue Clinic',
-    'Baines IntercareE Medical Centre, 15 Baines Avenue',
+    'Baines Intercare Medical Centre, 15 Baines Avenue',
     'Beatrice Road Infectious Diseases',
     'Belvedere Maternity',
     'Belvedere Medical Centre',
-    'BMC Hospital, 2 dendy young',
+    'BMC Hospital',
     'Central Harare Hospital',
     'Citimed Chitungwiza Hospital',
     'Corporate 24 Medical Centre',
@@ -121,7 +121,7 @@ hospital = [
     'Harare Maternity',
     'Highfield Poly Clinic',
     'Marlborough Medical Centre',
-    'Mbuya Docus Hospital',
+    'Mbuya Dorcas Hospital',
     'Med24 Medical Centre',
     'Metropolitan Clinic',
     'The Michael Gelfand Clinic',
@@ -161,7 +161,7 @@ hospital = [
     "Regina Coeli Mission Hospital",
     "Rusape General Hospital",
     "Rusitu Mission Hospital",
-    "St Peter's Checheche",
+    "St Peter's Hospital",
     "Clay Bank Group of Hospitals",
 
     "Gokwe District Hospital",
@@ -172,7 +172,7 @@ hospital = [
     "Shurugwi District Hospital",
     "Zvishavane District Hospital",
 
-    "Beit-Brige District Hospital",
+    "Beitbridge District Hospital",
     "Brunapeg st annes Mission Hospital",
     "Esigodini District Hospital",
     "Filabusi District Hospital",
@@ -265,7 +265,7 @@ hospital = [
 
 company = [
     'Datlabs', 'National Social Security Authority', 'Innscor', 'Econet Wireless', 'TelOne', 'Bakers Inn', 'Lobels',
-    'Zimplats', 'CBZ Holdings', 'CABS', 'Delta Beverages', 'Stanbic Bank', 'FBC Holdings', 'Standard Charteresd Bank',
+    'Zimplats', 'CBZ Holdings', 'CABS', 'Delta Beverages', 'Stanbic Bank', 'FBC Holdings', 'Standard Chartered Bank',
     'OLD Mutual (ZW)', 'ZB Financial Holdings', 'AICO', 'NMBZ', 'Hippo Valley Estates', 'Meikles', 'Barclays Bank',
     'Hwange Coal', 'Mwana Africa', 'MBCA', 'SeedCo', 'Zimre Property', 'Masawara', 'First Mutual Holdings', 'Dairibord',
     'RioZim', 'OK Zimbabwe', 'Natfoods', 'CFI Holdings', 'Padenga', 'Cassava Smartech', 'Telecel ZW', 'NetOne'
@@ -283,7 +283,7 @@ career_position = [
     'Programs Manager', 'Chief Executive Officer', 'Head Teller', 'Vice President of Engineering',
     'VP of Product Development', 'Book Keeper', 'Accountant', 'Senior Engineer', 'Head Master', 'Head Mistress',
     'Head of Department', 'Chairman', 'President', 'Co-CEO', 'Co-Chairman', 'Secretary', 'Secretary General',
-    'Data Entry Clerk', 'Manager', 'Personal Assistant', 'Chauffeur', 'Book Keeer', 'Librarian', 'Chief Librarian',
+    'Data Entry Clerk', 'Manager', 'Personal Assistant', 'Chauffeur', 'Book Keeper', 'Librarian', 'Chief Librarian',
     'Till Operator'
 ]
 
