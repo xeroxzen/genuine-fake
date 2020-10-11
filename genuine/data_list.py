@@ -20,7 +20,7 @@ common_names = [
     'Thandiwe', 'Ruramai', 'Farai', 'Tisdale', 'Chad', 'Lastborn', 'Kudakwashe', 'Mduduzi', 'Sibonisiwe', 'Sibonakele',
     'Sipho', 'Sihle', 'Cynthia', 'Celia', 'Cecilia', 'Drake', 'Dumoluhle', 'Dumisani', 'Anderson', 'Dumezweni',
     'Vikani', 'Vuyisile', 'Vuyani', 'Vumile', 'Mbangisi', 'Mbonisi', 'Mbongeni', 'Devon', 'Jasper', 'Michelle', 'Carol',
-    'Sam', 'Sicelo', 'Simosethu', 'Simosenkosi', 'Mary', 'Maryln', 'Marlene', 'Vusa', 'Vusumuzi', 'Albert', 'Utile',
+    'Sam', 'Sicelo', 'Simosethu', 'Simosenkosi', 'Mary', 'Marylene', 'Marlene', 'Vusa', 'Vusumuzi', 'Albert', 'Utile',
     'Shantelle', 'Chantel', 'Charmaine', 'Shamiso', 'Shylet', 'Nyasha', 'Wisbert', 'Obert', 'Noel', 'Noah', 'Nozipho',
     'Nokukhanya', 'Babalwa', 'Leeroy', 'Jabulani', 'Irene', 'Mangosuthu', 'Sasha', 'Nobantu', 'Gugulethu', 'Duduzile',
     'Siduduzile', 'Munyaradzi', 'Mayibongwe', 'Mongezi', 'Itai', 'Brett', 'Brandon', 'Brendon', 'Eulitha', 'Shona',
@@ -48,7 +48,7 @@ common_names = [
     'Ntandoe', 'Vince', 'Liam', 'Hope', 'Ronald', 'Rue', 'Privilege', 'Anopa', 'Gamuchirai', 'Tengerai', 'Isabel',
     'Ali', 'Chengetai', 'Shaniqi', 'Mufaro', 'Marcia', 'Isabella', 'Wendy', 'Agatha', 'William', 'Bob', 'Bill',
     'Harvey', 'Abigirl', 'Esther', 'Adam', 'Eve', 'Siphiwe', 'Godfrey', 'Emerge', 'Sydney', 'Denver', 'Zenzo',
-    'Zenzele', 'Zodwa', 'Zanele', 'Sandile', 'Mandisi', 'Bridgette', 'Dalindyebo', 'Gratutious', 'Bradley',
+    'Zenzele', 'Zodwa', 'Zanele', 'Sandile', 'Mandisi', 'Bridgette', 'Dalindyebo', 'Gratuitous', 'Bradley',
     'Marymaculate', 'Andreas', 'Ryan', 'Colin', 'Collins', 'Nicole', 'Nichols', 'Nicholas', 'Stan', 'Tina', 'Miranda',
     'Sasha', 'Bridget', 'Pretty', 'Roxanne', 'Elliot', 'Mica', 'Berlin', 'Nondyebo', 'Phumuzile', 'Natalie', 'Ivy',
     'Blue-Ivy', 'Ayan', 'Matthew', 'Martin'
@@ -56,9 +56,9 @@ common_names = [
 ]
 
 common_surnames = [
-    'Moyo', 'Nyathi', 'Dube', 'Sibanda', 'Mdlongwa', 'Ndlovu', 'Ndhlovu', 'Mbele', 'Stinta', 'Ncube', 'Mugabe',
-    'Shoko,', 'Chamisa', 'Khumalo', 'Nxumalo', 'Ncube', 'Sibanda', 'Moyo', 'Ndlovu', 'Mkhwananzi', 'Bhebhe', 'Dlodlo',
-    'Dube', 'Nkala', 'Nkomo', 'Tshuma', 'Mvundla', 'Ndebele', 'Khuphe', 'Nkiwane', 'Sibindi', 'Nyathi', 'Mpofu',
+    'Moyo', 'Nyathi', 'Nyati', 'Dube', 'Sibanda', 'Mdlongwa', 'Ndlovu', 'Ndhlovu', 'Mbele', 'Stinta', 'Ncube', 'Mugabe',
+    'Shoko,', 'Chamisa', 'Khumalo', 'Nxumalo', 'Ncube', 'Mkhwananzi', 'Bhebhe', 'Dlodlo', 'Nkala', 'Nkomo', 'Tshuma',
+    'Mvundla', 'Ndebele', 'Khuphe', 'Nkiwane', 'Sibindi', 'Nyathi', 'Mpofu',
     'Hlabangane', 'Siziba', 'Ngwenya', 'Mathuthu', 'Mangena', 'Chafa', 'Charumbira', 'Mandela', 'Mnangagwa', 'Mangwana',
     'Khuboni', 'Nyilika', 'Nyoni', 'Garanganga', 'Hatendi', 'Kachingwe', 'Mabuwa', 'Mangwende', 'Manyuchi', 'Mapfumo',
     'Mariga', 'Mupfumira', 'Musambasi', 'Ndandarika', 'Nyakasikana', 'Nyandoro', 'Tongofa', 'Nkabinde', 'Musa',
@@ -69,7 +69,7 @@ common_surnames = [
 medical_aid = [
     'For All Medical Aid Society', 'Varichem Limited Medical Fund', 'Steward Health Medical Benefit Fund',
     'Save Life Medical Aid Fund', 'Pro Health Medical Aid Society', 'Parksmed Health Fund', 'Genfin Medical Aid Fund',
-    'Corporate 24 Medical Aid', 'Calm Health International Medical Aid So', 'Advantage Health Medical Aid Society',
+    'Corporate 24 Medical Aid', 'Calm Health International Medical Aid Society', 'Advantage Health Medical Aid Society',
     'Med Assist Medical Aid Scheme', 'Evolution Health & Life Assurance', 'Medtours Africa',
     'Zimbabwe General Medical Aid Fund (Zigma)', 'Agricultural Medical Aid Society (Agrim)', 'Eternal Peace Health',
     'Premier Service Medical Aid Society', 'Bonvie Medical Aid Scheme', 'Cellmed Health Medical Fund',
