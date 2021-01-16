@@ -149,7 +149,7 @@ class GenuineFake:
     @staticmethod
     def phone_number():
         country_code = '+263'
-        network_code = ['77', '73', '71']
+        network_code = ['77', '78', '73', '71']
 
         set1 = string.digits
         set2 = string.digits
@@ -159,6 +159,10 @@ class GenuineFake:
 
         phone_number = country_code + ' ' + random.choice(network_code) + ' ' + code1 + ' ' + code2
         return phone_number
+
+    # @staticmethod
+    # def foreign_phone_number():
+    #     country_code =
 
     @staticmethod
     def email():
