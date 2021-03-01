@@ -188,31 +188,31 @@ class GenuineFake:
         return allergy
 
     @staticmethod
-    def hospital(self):
+    def hospital():
         hospital_data = data_list.hospital
         hospital = random.choice(hospital_data)
         return hospital
 
     @staticmethod
-    def career(self):
+    def career():
         career_data = data_list.career
         career = random.choice(career_data)
         return career
 
     @staticmethod
-    def career_position(self):
+    def career_position():
         career_position_data = data_list.career_position
         career_position = random.choice(career_position_data)
         return career_position
 
     @staticmethod
-    def company(self):
+    def company():
         company_data = data_list.company
         company = random.choice(company_data)
         return company
 
     @staticmethod
-    def medical_professions(self):
+    def medical_professions():
         profession_data = data_list.medical_roles
         profession = random.choice(profession_data)
         return profession
