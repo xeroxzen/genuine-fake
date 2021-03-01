@@ -12,25 +12,25 @@ Well, truthfully the inspiration came from me trying to challenge myself and be 
 ### How It Works
 ### Installation
 
-```sh
+```python
 $ pip install genuine-fake
 ```
 ### Different Environments
-```sh
+```python
 Terminal
 $ pip3 install genuine-fake
 $ python3
 >>> 
 ```
 
-```sh
+```python
 Windows Command Prompt
 C:\Users\Andile XeroxZen> pip install genuine-fake
 C:\Users\Andile XeroxZen> python
 >>>
 ```
 ### Usage
-```sh
+```python
 >>> from genuine.fake import GenuineFake
 >>> data = GenuineFake
 >>> data.name()        
@@ -56,7 +56,7 @@ C:\Users\Andile XeroxZen> python
 >>> data.career()
 'Physician'
 >>> data.company()
-'Standard Charteresd Bank'
+'Standard Chartered Bank'
 >>> data.career_position()
 'Chauffeur'
 >>> data.date()
@@ -67,10 +67,12 @@ C:\Users\Andile XeroxZen> python
 '1995-05-19'
 >>> data.allergies()
 'Fish'
+>>> data.house_account_number()
+34746237
 ```
 
 ### Other functions include
-```sh
+```python
 >>> import genuine
 >>> genuine.__author__
 'Andile Jaden Mbele'

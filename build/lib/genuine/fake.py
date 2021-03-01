@@ -223,6 +223,10 @@ class GenuineFake:
         # days_date = current_date
         return current_date.strftime("%Y-%m-%d")
 
+    def house_account_number():
+        house_account = random.randint(30000000, 39999999)
+        return house_account
+
 
 if __name__ == '__main__':
     data = GenuineFake
