@@ -225,7 +225,7 @@ class GenuineFake:
 
     def house_account_number():
         rand_num = random.randint(30000000, 39999999)
-        house_acc = random.choice(rand_num)
+        house_acc = list(random.choice(rand_num))
         return house_acc
 
 
