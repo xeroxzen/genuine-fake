@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: Genuine-fake
-Version: 1.2.13
+Version: 1.2.14
 Summary: Get genuine data for your testing requirements.
 Home-page: https://github.com/xeroxzen/genuine-fake
 Author: Andile Jaden Mbele
@@ -20,25 +20,25 @@ Description: # Genuine-Fake documentation
         ### How It Works
         ### Installation
         
-        ```sh
+        ```python
         $ pip install genuine-fake
         ```
         ### Different Environments
-        ```sh
+        ```python
         Terminal
         $ pip3 install genuine-fake
         $ python3
         >>> 
         ```
         
-        ```sh
+        ```python
         Windows Command Prompt
         C:\Users\Andile XeroxZen> pip install genuine-fake
         C:\Users\Andile XeroxZen> python
         >>>
         ```
         ### Usage
-        ```sh
+        ```python
         >>> from genuine.fake import GenuineFake
         >>> data = GenuineFake
         >>> data.name()        
@@ -64,7 +64,7 @@ Description: # Genuine-Fake documentation
         >>> data.career()
         'Physician'
         >>> data.company()
-        'Standard Charteresd Bank'
+        'Standard Chartered Bank'
         >>> data.career_position()
         'Chauffeur'
         >>> data.date()
@@ -75,10 +75,12 @@ Description: # Genuine-Fake documentation
         '1995-05-19'
         >>> data.allergies()
         'Fish'
+        >>> data.house_account_number()
+        34746237
         ```
         
         ### Other functions include
-        ```sh
+        ```python
         >>> import genuine
         >>> genuine.__author__
         'Andile Jaden Mbele'
