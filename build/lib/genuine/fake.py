@@ -224,9 +224,8 @@ class GenuineFake:
         return current_date.strftime("%Y-%m-%d")
 
     def house_account_number():
-        rand_num = random.randint(30000000, 39999999)
-        house_acc = list(random.choice(rand_num))
-        return house_acc
+        rand_num = str(randint(30000000, 39999999))
+        return rand_num
 
 
 if __name__ == '__main__':
