@@ -2,7 +2,7 @@
 
 """
 Created on Thu December 19 14:10:59 2019
-Updated on Monday March 1 11:35:59 2020
+Updated on Monday March 3 16:16:59 2020
 @author: Andile XeroxZen
 """
 
@@ -53,12 +53,6 @@ class GenuineFake:
 
     @staticmethod
     def name():
-        """
-        >>> genuine = GenuineFake
-        >>> genuine.name()
-        'Doreen Dlamini'
-
-        """
         name_data = choice(data_list.common_names) + ' ' + \
             choice(data_list.common_surnames)
         name = name_data
@@ -66,24 +60,12 @@ class GenuineFake:
 
     @staticmethod
     def first_name():
-        """
-        >>> from genuine.fake import GenuineFake
-        >>> genuine = GenuineFake
-        >>> genuine.first_name()
-        'Mongezi'
-        """
         first_name_data = data_list.common_names
         first_name = random.choice(first_name_data)
         return first_name
 
     @staticmethod
     def last_name():
-        """
-        >>> from genuine.fake import GenuineFake
-        >>> genuine = GenuineFake
-        >>> genuine.last_name()
-        'Sikhosana'
-        """
         last_name_data = data_list.common_surnames
         last_name = random.choice(last_name_data)
         return last_name
@@ -114,12 +96,6 @@ class GenuineFake:
 
     @staticmethod
     def national_id():
-        """
-        >>> from genuine.fake import GenuineFake
-        >>> fake = GenuineFake
-        >>> fake.national_id()
-        '15-516077P91'
-        """
         set1 = string.digits
         set2 = string.digits
         set3 = string.ascii_uppercase
