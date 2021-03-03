@@ -223,9 +223,28 @@ class GenuineFake:
         # days_date = current_date
         return current_date.strftime("%Y-%m-%d")
 
+    @staticmethod
     def house_account_number():
         rand_num = str(randint(30000000, 39999999))
         return rand_num
+
+    @staticmethod
+    def covid_symptoms():
+        symptoms_data = data_list.coronavirus_symptoms
+        symptom = random.choice(symptoms_data)
+        return symptom
+
+    @staticmethod
+    def payment_methods():
+        payment_methods_data = data_list.payment_methods
+        payment_method = random.choice(payment_methods_data)
+        return payment_method
+
+    @staticmethod
+    def covid_age_group():
+        ages_data = data_list.covid_age_range
+        age_group = random.choice(ages_data)
+        return age_group
 
 
 if __name__ == '__main__':
