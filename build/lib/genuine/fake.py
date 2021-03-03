@@ -2,7 +2,7 @@
 
 """
 Created on Thu December 19 14:10:59 2019
-Updated on Sunday September 27 04:33:59 2020
+Updated on Monday March 1 11:35:59 2020
 @author: Andile XeroxZen
 """
 
@@ -59,7 +59,8 @@ class GenuineFake:
         'Doreen Dlamini'
 
         """
-        name_data = choice(data_list.common_names) + ' ' + choice(data_list.common_surnames)
+        name_data = choice(data_list.common_names) + ' ' + \
+            choice(data_list.common_surnames)
         name = name_data
         return name
 
@@ -141,7 +142,8 @@ class GenuineFake:
         house_num = "".join(choice(house_no) for x in range(randint(1, 5)))
         place = data_list.places
         street_addr = data_list.streets
-        address = house_num + ' ' + random.choice(street_addr) + ', ' + random.choice(place)
+        address = house_num + ' ' + \
+            random.choice(street_addr) + ', ' + random.choice(place)
         chosen_address = address
 
         return chosen_address
@@ -157,7 +159,8 @@ class GenuineFake:
         code1 = "".join(choice(set1) for i in range(randint(3, 3)))
         code2 = "".join(choice(set2) for j in range(randint(4, 4)))
 
-        phone_number = country_code + ' ' + random.choice(network_code) + ' ' + code1 + ' ' + code2
+        phone_number = country_code + ' ' + \
+            random.choice(network_code) + ' ' + code1 + ' ' + code2
         return phone_number
 
     # @staticmethod
@@ -223,9 +226,28 @@ class GenuineFake:
         # days_date = current_date
         return current_date.strftime("%Y-%m-%d")
 
+    @staticmethod
     def house_account_number():
         rand_num = str(randint(30000000, 39999999))
         return rand_num
+
+    @staticmethod
+    def covid_symptom():
+        symptoms_data = data_list.coronavirus_symptoms
+        symptom = random.choice(symptoms_data)
+        return symptom
+
+    @staticmethod
+    def payment_method():
+        payment_methods_data = data_list.payment_methods
+        payment_method = random.choice(payment_methods_data)
+        return payment_method
+
+    @staticmethod
+    def covid_age_group():
+        ages_data = data_list.covid_age_range
+        age_group = random.choice(ages_data)
+        return age_group
 
 
 if __name__ == '__main__':
