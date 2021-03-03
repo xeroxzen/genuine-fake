@@ -1,26 +1,32 @@
 # Genuine-Fake documentation
 
 ### Definition
+
 Genuine Fake means an imitation of a (usually) valuable object that is so good that it is, to all intents and purposes, identical. Literally genuine fake means something that is real but not real at the same time. Take it like this, it's more of a perfect replica of the original.
 
 ### Why
+
 As I was building a Django app that involved forms a lot, I got tired from filling the forms and having to think of the testing data at the same time. As curious as I am I wondered if there might be a package that can handle this for me, fortunately there was one, but I didn't like it, well not because it wasn't good, it was brilliant actually but it didn't have all the necessary and broad range of data I was looking for. Then I asked myself "What now?" The decision was to write my own. I did write it within 6 hours. I have changed it's name about 3 times now, hopefully this time it will stick.
 
 ### Inspiration
+
 Well, truthfully the inspiration came from me trying to challenge myself and be out there. I was so inspired to write the code for this to the point that I wrote half the code on paper as I was travelling from school to home on the train.
 
 ### How It Works
+
 ### Installation
 
-```python
+```sh
 $ pip install genuine-fake
 ```
+
 ### Different Environments
+
 ```python
 Terminal
 $ pip3 install genuine-fake
 $ python3
->>> 
+>>>
 ```
 
 ```python
@@ -29,11 +35,12 @@ C:\Users\Andile XeroxZen> pip install genuine-fake
 C:\Users\Andile XeroxZen> python
 >>>
 ```
+
 ### Usage
+
 ```python
->>> from genuine.fake import GenuineFake
->>> data = GenuineFake
->>> data.name()        
+>>> from genuine.fake import GenuineFake as data
+>>> data.name()
 'Mbonisi Ncube'
 >>> data.first_name()
 'Phumzile'
@@ -68,10 +75,17 @@ C:\Users\Andile XeroxZen> python
 >>> data.allergies()
 'Fish'
 >>> data.house_account_number()
-34746237
+'34746237'
+>>> data.covid_symptom()
+'fever'
+>>> data.payment_method()
+'EcoCash'
+>>> data.covid_age_group()
+'13 - 19'
 ```
 
 ### Other functions include
+
 ```python
 >>> import genuine
 >>> genuine.__author__
@@ -80,8 +94,7 @@ C:\Users\Andile XeroxZen> python
 'andilembele020@gmail.com'
 >>> genuine.__package__
 'genuine-fake'
->>> genuine.__github__  
+>>> genuine.__github__
 'https://github.com/xeroxzen/genuine-fake'
 >>>
 ```
-
