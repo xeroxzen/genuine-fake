@@ -22,7 +22,7 @@ $ pip install genuine-fake
 
 ### Different Environments
 
-#### ```MacOS and Linux Terminal`
+#### ```MacOS and Linux Terminal```
 ```python
 $ pip3 install Genuine-fake
 $ python3
