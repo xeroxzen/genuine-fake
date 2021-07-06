@@ -2,15 +2,14 @@
 
 """
 Created on Thu December 19 14:10:59 2019
-Updated on Monday March 3 16:16:59 2020
-@author: Andile XeroxZen
+Updated on Tuesday July 6 06:58:59 2021
+@author: Andile Jaden Mbele
 """
 
 import datetime
 import random
 import string
 from random import choice, randint
-# from genuine import data_list
 from . import data_list
 
 
