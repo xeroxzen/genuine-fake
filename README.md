@@ -14,7 +14,7 @@ Well, truthfully the inspiration came from me trying to challenge myself and be 
 
 ### How It Works
 
-### Installation
+### ```Installation``` 
 
 ```sh
 $ pip install genuine-fake
@@ -22,65 +22,68 @@ $ pip install genuine-fake
 
 ### Different Environments
 
+#### ```MacOS and Linux Terminal`
 ```python
-Terminal
-$ pip3 install genuine-fake
+$ pip3 install Genuine-fake
 $ python3
 >>>
 ```
 
-```python
-Windows Command Prompt
-C:\Users\Andile XeroxZen> pip install genuine-fake
-C:\Users\Andile XeroxZen> python
+#### ```Windows Command Prompt```
+```cmd
+C:\Users\andil> pip install genuine-fake
+C:\Users\andil> python
+```
+```py
+>>> from genuine.fake import GenuineFake as gf
 >>>
 ```
 
-### Usage
+### ```In Action```
 
 ```python
->>> from genuine.fake import GenuineFake as data
->>> data.name()
+>>> from genuine.fake import GenuineFake as gf
+>>> gf.name()
 'Mbonisi Ncube'
->>> data.first_name()
+>>> gf.first_name()
 'Phumzile'
->>> data.last_name()
+>>> gf.last_name()
 'Moyo'
->>> data.hospital()
+>>> gf.hospital()
 'Queen of Peace Clinic'
->>> data.medical_aid()
+>>> gf.medical_aid()
 'For All Medical Aid Society'
->>> data.medical_professions()
+>>> gf.medical_professions()
 'Orthotist'
->>> data.national_id()
+>>> gf.national_id()
 '08-906712V35'
->>> data.phone_number()
+>>> gf.phone_number()
 '+263 77 647 5160'
->>> data.email()
+>>> gf.email()
 'ivynkala@outlook.com'
->>> data.address()
+>>> gf.address()
 '32 Casper Road, Sunninghill'
->>> data.career()
+>>> gf.career()
 'Physician'
->>> data.company()
+>>> gf.company()
 'Standard Chartered Bank'
->>> data.career_position()
+>>> gf.career_position()
 'Chauffeur'
->>> data.date()
+>>> gf.date()
 '2020-04-13'
->>> data.random_date()
+>>> gf.random_date()
 '1988-06-21'
->>> data.date_of_birth()
+>>> gf.date_of_birth()
 '1995-05-19'
->>> data.allergies()
+>>> gf.allergies()
 'Fish'
->>> data.house_account_number()
+>>> gf.house_account_number()
 '34746237'
->>> data.covid_symptom()
+>>> gf.covid_symptom()
 'fever'
->>> data.payment_method()
+>>> gf.payment_method()
 'EcoCash'
->>> data.covid_age_group()
+>>> gf.covid_age_group()
 '13 - 19'
 ```
 
