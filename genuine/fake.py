@@ -11,6 +11,7 @@ import random
 import string
 from random import choice, randint
 from . import data_list
+from pycountrycode.countrycode import get_code
 
 
 # noinspection PyUnusedLocal
@@ -22,7 +23,7 @@ class GenuineFake:
 
     @staticmethod
     def name():
-        """When this function is called, it should return a full person name. 
+        """When this function is called, it should return a full person name.
 
         >>> gf.name()
         'Nokuzola Mbele'
@@ -34,7 +35,7 @@ class GenuineFake:
 
     @staticmethod
     def first_name():
-        """When this function is called, it should return a firstname. 
+        """When this function is called, it should return a firstname.
 
         >>> gf.first_name()
         'Miranda'
@@ -45,7 +46,7 @@ class GenuineFake:
 
     @staticmethod
     def last_name():
-        """When this function is called, it should return a lastname/surname. 
+        """When this function is called, it should return a lastname/surname.
 
         >>> gf.last_name()
         'Washington'
@@ -56,7 +57,7 @@ class GenuineFake:
 
     @staticmethod
     def gender():
-        """When this function is called, it should return one of two gender possibilities. 
+        """When this function is called, it should return one of two gender possibilities.
 
         >>> gf.gender()
         'female'
@@ -67,7 +68,7 @@ class GenuineFake:
 
     @staticmethod
     def random_date():
-        """Return a a randomly generated date. 
+        """Return a a randomly generated date.
 
         >>> gf.random_date()
         '1968-04-29'
@@ -81,7 +82,7 @@ class GenuineFake:
 
     @staticmethod
     def date_of_birth():
-        """Return a a randomly generated date of birth. 
+        """Return a a randomly generated date of birth.
 
         >>> gf.date_of_birth()
         '2018-10-11'
@@ -156,9 +157,47 @@ class GenuineFake:
             random.choice(network_code) + ' ' + code1 + ' ' + code2
         return phone_number
 
+
+
+    @staticmethod
+    def international_number():
+        """
+        Returns a valid international mobile number of a select countries
+
+        >>> gf.international_number()
+        '+61 401 983 162'
+        >>> gf.international_number()
+        '+27 87 172 9803'
+        """
+        country_code = [get_code('South Africa'), get_code('United States'), get_code('Canada'), get_code('Australia')]
+        if country_code[0]:
+            # South Africa
+            network_code = ['61', '87']
+            num1 = string.digits
+            num2 = string.digits
+
+            first_3_digits = "".join(random.choice(num1) for i in range(random.randint(3, 3)))
+            last_4_digits = "".join(random.choice(num2) for j in range(random.randint(4, 4)))
+
+            phone = country_code[0] + ' ' + random.choice(network_code) + ' ' + first_3_digits + ' ' + last_4_digits
+            return phone
+        elif country_code[3]:
+            # Australia
+            network_code = ['401', '413', '453']
+            num1 = string.digits
+            num2 = string.digits
+
+            first_3_digits = "".join(random.choice(num1) for i in range(random.randint(3, 3)))
+            last_4_digits = "".join(random.choice(num2) for j in range(random.randint(4, 4)))
+
+            phone = country_code[0] + ' ' + random.choice(network_code) + ' ' + first_3_digits + ' ' + last_4_digits
+            return phone
+
+
+
     @staticmethod
     def email():
-        """Return a valid email address registered with the popular email clients you can think of. 
+        """Return a valid email address registered with the popular email clients you can think of.
 
         This is possible by combining firstnames and lastnames and then running the choice function to randomly assign correspondence.
 
@@ -188,11 +227,11 @@ class GenuineFake:
 
     @staticmethod
     def allergies():
-        """ Return an allergy 
+        """ Return an allergy
 
         >>> gf.allergies()
         'Tartrazine'
-        >>> 
+        >>>
         """
         allergies_data = data_list.allergens
         allergy = random.choice(allergies_data)
@@ -260,7 +299,7 @@ class GenuineFake:
 
     @staticmethod
     def date():
-        """Return the current date 
+        """Return the current date
 
         >>> gf.date()
         '2021-07-06'
@@ -286,7 +325,7 @@ class GenuineFake:
         """ Return a COVID-19 symptom
 
         >>> gf.covid_symptom()
-        'tiredness'     
+        'tiredness'
         >>>
         """
 
@@ -296,7 +335,7 @@ class GenuineFake:
 
     @staticmethod
     def payment_method():
-        """ Return a universally acceptable payment method 
+        """ Return a universally acceptable payment method
 
         >>> gf.payment_method()
         'VISA'
@@ -308,7 +347,7 @@ class GenuineFake:
 
     @staticmethod
     def covid_age_group():
-        """ Return an age group used to categorize COVID-19 infections 
+        """ Return an age group used to categorize COVID-19 infections
 
         >>> gf.covid_age_group()
         '55 - 64'
