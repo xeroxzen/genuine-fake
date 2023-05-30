@@ -11,7 +11,7 @@ import random
 import string
 from random import choice, randint
 from . import data_list
-from pycountrycode.countrycode import get_code
+# from pycountrycode.countrycode import get_code
 
 
 # noinspection PyUnusedLocal
@@ -82,17 +82,17 @@ class GenuineFake:
 
     @staticmethod
     def date_of_birth():
-        """Return a a randomly generated date of birth.
+        """Return a randomly generated date of birth.
 
-        >>> gf.date_of_birth()
-        '2018-10-11'
+        >>> Generator.date_of_birth()
+        '3 Dec 2000'
         """
-        pos_day = range(1, 31)
-        pos_month = range(1, 13)
-        pos_year = range(1900, 2021)
+        days = random.randrange(1, 31)
+        months = random.randrange(1, 13)
+        years = random.randrange(1900, 2022)
 
-        return datetime.date(random.choice(pos_year), random.choice(pos_month), random.choice(pos_day)).strftime(
-            "%Y-%m-%d")
+        dob = datetime.date(years, months, days).strftime("%-d %b %Y")
+        return dob
 
     @staticmethod
     def national_id():
@@ -125,62 +125,63 @@ class GenuineFake:
 
     @staticmethod
     def phone_number():
-        """Return a valid Zimbabwean cell phone number for all the three operational mobile network.
+        """Return a valid Zimbabwean cell phone number for all three operational mobile networks.
 
-        To achieve this use the many handy functions provided by the random module including randint and choice.
+        To achieve this, use the handy functions provided by the random module, including randint and choice.
 
-
-        >>> gf.phone_numbers()
+        >>> Generator.phone_number()
         '+263 78 385 4016'
         """
         country_code = '+263'
-        network_code = ['77', '78', '73', '71']
+        network_code = ['77', '78', '71', '73']
 
         set1 = string.digits
         set2 = string.digits
 
-        code1 = "".join(choice(set1) for i in range(randint(3, 3)))
-        code2 = "".join(choice(set2) for j in range(randint(4, 4)))
+        code1 = ''.join(random.choices(set1, k=random.randint(3, 3)))
+        code2 = ''.join(random.choices(set2, k=random.randint(4, 4)))
 
-        phone_number = country_code + ' ' + \
-            random.choice(network_code) + ' ' + code1 + ' ' + code2
-        return phone_number
+        prioritized_network_codes = ['77', '78', '71', '73', '73', '73']
+        chosen_network_code = random.choice(prioritized_network_codes)
+
+        formatted_number = f"{country_code} {chosen_network_code} {code1} {code2}"
+        return formatted_number
 
 
 
     @staticmethod
-    def international_number():
-        """
-        Returns a valid international mobile number of a select countries
+    # def international_number():
+    #     """
+    #     Returns a valid international mobile number of a select countries
 
-        >>> gf.international_number()
-        '+61 401 983 162'
-        >>> gf.international_number()
-        '+27 87 172 9803'
-        """
-        country_code = [get_code('South Africa'), get_code('United States'), get_code('Canada'), get_code('Australia')]
-        if country_code[0]:
-            # South Africa
-            network_code = ['61', '87']
-            num1 = string.digits
-            num2 = string.digits
+    #     >>> gf.international_number()
+    #     '+61 401 983 162'
+    #     >>> gf.international_number()
+    #     '+27 87 172 9803'
+    #     """
+    #     country_code = [get_code('South Africa'), get_code('United States'), get_code('Canada'), get_code('Australia')]
+    #     if country_code[0]:
+    #         # South Africa
+    #         network_code = ['61', '87']
+    #         num1 = string.digits
+    #         num2 = string.digits
 
-            first_3_digits = "".join(random.choice(num1) for i in range(random.randint(3, 3)))
-            last_4_digits = "".join(random.choice(num2) for j in range(random.randint(4, 4)))
+    #         first_3_digits = "".join(random.choice(num1) for i in range(random.randint(3, 3)))
+    #         last_4_digits = "".join(random.choice(num2) for j in range(random.randint(4, 4)))
 
-            phone = country_code[0] + ' ' + random.choice(network_code) + ' ' + first_3_digits + ' ' + last_4_digits
-            return phone
-        elif country_code[3]:
-            # Australia
-            network_code = ['401', '413', '453']
-            num1 = string.digits
-            num2 = string.digits
+    #         phone = country_code[0] + ' ' + random.choice(network_code) + ' ' + first_3_digits + ' ' + last_4_digits
+    #         return phone
+    #     elif country_code[3]:
+    #         # Australia
+    #         network_code = ['401', '413', '453']
+    #         num1 = string.digits
+    #         num2 = string.digits
 
-            first_3_digits = "".join(random.choice(num1) for i in range(random.randint(3, 3)))
-            last_4_digits = "".join(random.choice(num2) for j in range(random.randint(4, 4)))
+    #         first_3_digits = "".join(random.choice(num1) for i in range(random.randint(3, 3)))
+    #         last_4_digits = "".join(random.choice(num2) for j in range(random.randint(4, 4)))
 
-            phone = country_code[0] + ' ' + random.choice(network_code) + ' ' + first_3_digits + ' ' + last_4_digits
-            return phone
+    #         phone = country_code[0] + ' ' + random.choice(network_code) + ' ' + first_3_digits + ' ' + last_4_digits
+    #         return phone
 
 
 
