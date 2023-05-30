@@ -98,41 +98,30 @@ class GenuineFake:
     def national_id():
         """Return a valid Zimbabwean issued National ID
 
-        >>> gf.national_id()
+        >>> Generator.national_id()
         '33-3432018L80'
         """
-        set1 = string.digits
-        set2 = string.digits
-        set3 = string.ascii_uppercase
-        set4 = string.digits
+        digits1 = ''.join(choice(string.digits) for _ in range(2))
+        digits2 = ''.join(choice(string.digits) for _ in range(randint(6, 7)))
+        uppercase_letter = choice(string.ascii_uppercase)
+        digits3 = ''.join(choice(string.digits) for _ in range(2))
 
-        i: int
-        issued_set1 = "".join(choice(set1) for i in range(randint(2, 2)))
-        j: int
-        issued_set2 = "".join(choice(set2) for j in range(randint(6, 7)))
-        issued_set3 = "".join(choice(set3) for k in range(randint(1, 1)))
-        x: int
-        issued_set4 = "".join(choice(set4) for x in range(randint(2, 2)))
-
-        issued_id = issued_set1 + '-' + issued_set2 + issued_set3 + issued_set4
+        issued_id = f"{digits1}-{digits2}{uppercase_letter}{digits3}"
         return issued_id
 
     @staticmethod
     def address():
-        """ Return a valid home address
+        """Return a valid home address
 
-        >>> gf.address()
+        >>> Generator.address()
         '52908 Jason Moyo Ave, Harrisvale'
         """
-        house_no = string.digits
-        house_num = "".join(choice(house_no) for x in range(randint(1, 5)))
-        place = data_list.places
-        street_addr = data_list.streets
-        address = house_num + ' ' + \
-            random.choice(street_addr) + ', ' + random.choice(place)
-        chosen_address = address
-
-        return chosen_address
+        house_num = ''.join(random.choice(string.digits) for _ in range(random.randint(1, 5)))
+        place = data_list.places if hasattr(data_list, 'places') and data_list.places else []
+        street_addr = data_list.streets if hasattr(data_list, 'streets') and data_list.streets else []
+        
+        address = f"{house_num} {random.choice(street_addr)}, {random.choice(place)}"
+        return address
 
     @staticmethod
     def phone_number():
