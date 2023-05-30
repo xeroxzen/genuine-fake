@@ -11,7 +11,7 @@ import random
 import string
 from random import choice, randint
 from . import data_list
-# from pycountrycode.countrycode import get_code
+from pycountrycode.countrycode import get_country, get_code
 
 
 # noinspection PyUnusedLocal
@@ -150,38 +150,157 @@ class GenuineFake:
 
 
     @staticmethod
-    # def international_number():
-    #     """
-    #     Returns a valid international mobile number of a select countries
+    def international_number():
+        """
+        Returns a valid international mobile number for selected countries.
 
-    #     >>> gf.international_number()
-    #     '+61 401 983 162'
-    #     >>> gf.international_number()
-    #     '+27 87 172 9803'
-    #     """
-    #     country_code = [get_code('South Africa'), get_code('United States'), get_code('Canada'), get_code('Australia')]
-    #     if country_code[0]:
-    #         # South Africa
-    #         network_code = ['61', '87']
-    #         num1 = string.digits
-    #         num2 = string.digits
+        >>> gf.international_number()
+        '+61 401 983 162'
+        >>> gf.international_number()
+        '+27 87 172 9803'
+        """
+        country_codes = [
+            get_code('South Africa'),
+            get_code('United States'),
+            get_code('Canada'),
+            get_code('Australia'),
+            get_code('United Kingdom'),
+            get_code('New Zealand'),
+            get_code('Ireland'),
+            get_code('India'),
+            get_code('China'),
+            get_code('Japan'),
+            get_code('Brazil'),
+            get_code('Russia'),
+            get_code('France'),
+            get_code('Germany'),
+            get_code('Italy'),
+            get_code('Spain'),
+            get_code('Mexico'),
+            get_code('Indonesia'),
+            get_code('Turkey'),
+            get_code('Netherlands'),
+            get_code('Saudi Arabia'),
+            get_code('Switzerland'),
+            get_code('Argentina'),
+            get_code('Sweden'),
+            get_code('Poland'),
+            get_code('Belgium'),
+            get_code('Norway'),
+            get_code('Austria'),
+            get_code('United Arab Emirates')
+        ]
 
-    #         first_3_digits = "".join(random.choice(num1) for i in range(random.randint(3, 3)))
-    #         last_4_digits = "".join(random.choice(num2) for j in range(random.randint(4, 4)))
+        phone_numbers = {
+            'South Africa': {
+                'network_code': ['61', '87']
+            },
+            'Australia': {
+                'network_code': ['401', '413', '453']
+            },
+            'United States': {
+                'network_code': ['201', '202', '203', '204', '205', '206', '207', '208', '209', '210']
+            },
+            'Canada': {
+                'network_code': ['401', '413', '453']
+            },
+            'United Kingdom': {
+                'network_code': ['401', '413', '453']
+            },
+            'New Zealand': {
+                'network_code': ['401', '413', '453']
+            },
+            'Ireland': {
+                'network_code': ['401', '413', '453']
+            },
+            'India': {
+                'network_code': ['401', '413', '453']
+            },
+            'China': {
+                'network_code': ['401', '413', '453']
+            },
+            'Japan': {
+                'network_code': ['401', '413', '453']
+            },
+            'Brazil': {
+                'network_code': ['401', '413', '453']
+            },
+            'Russia': {
+                'network_code': ['401', '413', '453']
+            },
+            'France': {
+                'network_code': ['401', '413', '453']
+            },
+            'Germany': {
+                'network_code': ['401', '413', '453']
+            },
+            'Italy': {
+                'network_code': ['401', '413', '453']
+            },
+            'Spain': {
+                'network_code': ['401', '413', '453']
+            },
+            'Mexico': {
+                'network_code': ['401', '413', '453']
+            },
+            'Indonesia': {
+                'network_code': ['401', '413', '453']
+            },
+            'Turkey': {
+                'network_code': ['401', '413', '453']
+            },
+            'Netherlands': {
+                'network_code': ['401', '413', '453']
+            },
+            'Saudi Arabia': {
+                'network_code': ['401', '413', '453']
+            },
+            'Switzerland': {
+                'network_code': ['401', '413', '453']
+            },
+            'Argentina': {
+                'network_code': ['401', '413', '453']
+            },
+            'Sweden': {
+                'network_code': ['401', '413', '453']
+            },
+            'Poland': {
+                'network_code': ['401', '413', '453']
+            },
+            'Belgium': {
+                'network_code': ['401', '413', '453']
+            },
+            'Norway': {
+                'network_code': ['401', '413', '453']
+            },
+            'Austria': {
+                'network_code': ['401', '413', '453']
+            },
+            'United Arab Emirates': {
+                'network_code': ['401', '413', '453']
+            }
 
-    #         phone = country_code[0] + ' ' + random.choice(network_code) + ' ' + first_3_digits + ' ' + last_4_digits
-    #         return phone
-    #     elif country_code[3]:
-    #         # Australia
-    #         network_code = ['401', '413', '453']
-    #         num1 = string.digits
-    #         num2 = string.digits
+        }
 
-    #         first_3_digits = "".join(random.choice(num1) for i in range(random.randint(3, 3)))
-    #         last_4_digits = "".join(random.choice(num2) for j in range(random.randint(4, 4)))
+        selected_country = None
+        for country_code in country_codes:
+            if country_code:
+                selected_country = get_country(country_code)
+                break
 
-    #         phone = country_code[0] + ' ' + random.choice(network_code) + ' ' + first_3_digits + ' ' + last_4_digits
-    #         return phone
+        if selected_country in phone_numbers:
+            country_data = phone_numbers[selected_country]
+            network_code = country_data['network_code']
+            num1 = string.digits
+            num2 = string.digits
+
+            first_3_digits = "".join(random.choice(num1) for _ in range(random.randint(3, 3)))
+            last_4_digits = "".join(random.choice(num2) for _ in range(random.randint(4, 4)))
+
+            phone = country_code + ' ' + random.choice(network_code) + ' ' + first_3_digits + ' ' + last_4_digits # type: ignore
+            return phone
+
+        return 'Undefined country'
 
 
 
