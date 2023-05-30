@@ -187,22 +187,23 @@ class GenuineFake:
 
     @staticmethod
     def email():
-        """Return a valid email address registered with the popular email clients you can think of.
+        """Return a valid email address registered with popular email clients.
 
-        This is possible by combining firstnames and lastnames and then running the choice function to randomly assign correspondence.
+        This is achieved by combining first names and last names and then randomly assigning correspondence.
 
-        >>> gf.email()
-        'ngonidzashegweshe@yahoo.co.uk'
+        >>> Generator.email()
+        'ngonidzashegweshe@gmail.com'
         """
+        first_name = random.choice(data_list.common_names)
+        last_name = random.choice(data_list.common_surnames)
+        username = first_name.lower() + last_name.lower()
 
-        first_name = choice(data_list.common_names)
-        last_name = choice(data_list.common_surnames)
-        user_name = first_name.lower() + last_name.lower()
-        mail_server = ('gmail.com', 'yahoo.com', 'aol.com', 'outlook.com', 'hotmail.com', 'iCloud.com', 'yahoo.co.uk',
-                       'protonmail.com')
-        mail_address = user_name + '@' + random.choice(mail_server)
+        prioritized_providers = ['gmail.com', 'outlook.com', 'gmail.com', 'outlook.com']
+        other_providers = ['aol.com', 'yahoo.com', 'hotmail.com', 'iCloud.com', 'yahoo.co.uk', 'protonmail.com']
+        mail_server = prioritized_providers + other_providers
 
-        return mail_address
+        email_address = username + '@' + random.choice(mail_server)
+        return email_address
 
     @staticmethod
     def medical_aid():
