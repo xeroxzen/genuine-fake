@@ -1085,7 +1085,7 @@ medical_aid = [
 ]
 
 allergens = [
-	'Balsam of Peru', 'Egg', 'Fish', 'Fruit' 'Garlic', 'Hot pepper', 'Oats', 'Maize', 'Milk', 'Poultry Meat',
+	'Balsam of Peru', 'Egg', 'Fish', 'Fruit', 'Garlic', 'Hot pepper', 'Oats', 'Maize', 'Milk', 'Poultry Meat',
 	'Red Meat', 'Rice', 'Sesame', 'Shellfish', 'Soy', 'Sulfites', 'Tartrazine', 'Tree Nut', 'Wheat', 'Tetracycline',
 	'Dilantin', 'Tegretol', 'Penicillin', 'Cephalosporins', 'Sulfonamides', 'anti-inflammatories',
 	'intravenous contrast dye', 'local anaesthetics', 'Pollen', 'cat', 'dog', 'insect sting', 'perfume', 'mold',
@@ -1354,9 +1354,9 @@ medical_roles = [
 	"Podiatrist",
 	"Post Anesthesia Nurse",
 	"Postpartum Nurse",
-	"Progressive Care Nurse"
+	"Progressive Care Nurse",
 	"Psychiatric Nurse",
-	"Psychiatric Nurse Practitioner"
+	"Psychiatric Nurse Practitioner",
 	"Public Health Nurse",
 	"Registered Nurse (RN)",
 	"Registered Nurse (RN) Case Manager",
