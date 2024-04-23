@@ -133,7 +133,6 @@ class GenuineFake:
         '+263 78 385 4016'
         """
         country_code = '+263'
-        network_code = ['77', '78', '71', '73']
 
         set1 = string.digits
         set2 = string.digits
@@ -416,7 +415,6 @@ class GenuineFake:
         >>>
         """
         current_date = datetime.date.today()
-        # days_date = current_date
         return current_date.strftime("%Y-%m-%d")
 
     @staticmethod
