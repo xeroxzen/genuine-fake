@@ -464,6 +464,18 @@ class GenuineFake:
         ages_data = data_list.covid_age_range
         age_group = random.choice(ages_data)
         return age_group
+    
+    @staticmethod
+    def covid_vaccine():
+        """ Return a COVID-19 vaccine type
+
+        >>> gf.covid_vaccine()
+        'AstraZeneca'
+        >>>
+        """
+        vaccines_data = data_list.covid_vaccines
+        vaccine = random.choice(vaccines_data)
+        return vaccine
 
 
 if __name__ == '__main__':
