@@ -476,6 +476,18 @@ class GenuineFake:
         vaccines_data = data_list.covid_vaccines
         vaccine = random.choice(vaccines_data)
         return vaccine
+    
+    @staticmethod
+    def currency():
+        """ Return a currency
+
+        >>> gf.currency()
+        'USD'
+        >>>
+        """
+        currency_data = data_list.currency
+        currency = random.choice(currency_data)
+        return currency
 
 
 if __name__ == '__main__':
