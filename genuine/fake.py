@@ -488,6 +488,18 @@ class GenuineFake:
         currency_data = data_list.currency
         currency = random.choice(currency_data)
         return currency
+    
+    @staticmethod
+    def colour():
+        """ Return a colour
+
+        >>> gf.colour()
+        'blue'
+        >>>
+        """
+        colour_data = data_list.colours
+        colour = random.choice(colour_data)
+        return colour
 
 
 if __name__ == '__main__':
