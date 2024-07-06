@@ -500,6 +500,17 @@ class GenuineFake:
         colour_data = data_list.colours
         colour = random.choice(colour_data)
         return colour
+    
+    @staticmethod
+    def car_brand():
+        """Return a car maker
+        
+        >>> gf.car_brand()
+        'Tesla'
+        """
+        car_brand_data = data_list.car_brands
+        car_brand = random.choice(car_brand_data)
+        return car_brand
 
 
 if __name__ == '__main__':
