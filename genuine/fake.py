@@ -511,6 +511,18 @@ class GenuineFake:
         car_brand_data = data_list.car_brands
         car_brand = random.choice(car_brand_data)
         return car_brand
+    
+    @staticmethod
+    def billionaire():
+        """Return a billionaire's name
+        
+        >>> gf.billionaire()
+        'Jeff Bezos'
+        """
+        billionaire_data = data_list.billionaires
+        billionaire = random.choice(billionaire_data)
+        return billionaire
+    
 
 
 if __name__ == '__main__':
