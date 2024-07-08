@@ -523,6 +523,16 @@ class GenuineFake:
         billionaire = random.choice(billionaire_data)
         return billionaire
     
+    @staticmethod
+    def country():
+        """Return a country name
+        
+        >>> gf.country()
+        'Zimbabwe'
+        """
+        country_data = data_list.countries
+        country = random.choice(country_data)
+        return country
 
 
 if __name__ == '__main__':
