@@ -533,6 +533,17 @@ class GenuineFake:
         country_data = data_list.countries
         country = random.choice(country_data)
         return country
+    
+    @staticmethod
+    def capital_city():
+        """Return a city name
+        
+        >>> gf.capital_city()
+        'Harare'
+        """
+        city_data = data_list.capital_cities
+        capacity_city = random.choice(city_data)
+        return capacity_city
 
 
 if __name__ == '__main__':
