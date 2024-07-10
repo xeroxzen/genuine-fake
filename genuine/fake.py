@@ -544,6 +544,17 @@ class GenuineFake:
         city_data = data_list.capital_cities
         capacity_city = random.choice(city_data)
         return capacity_city
+    
+    @staticmethod
+    def url():
+        """Return a URL
+        
+        >>> gf.url()
+        'https://www.google.com'
+        """
+        url_data = data_list.url
+        url = random.choice(url_data)
+        return url
 
 
 if __name__ == '__main__':
