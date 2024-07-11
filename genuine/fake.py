@@ -566,6 +566,17 @@ class GenuineFake:
         smartphone_data = data_list.smartphone_makers
         smartphone = random.choice(smartphone_data)
         return smartphone
+    
+    @staticmethod
+    def programming_language():
+        """Return a programming language
+        
+        >>> gf.programming_language()
+        'Python'
+        """
+        programming_data = data_list.programming_languages
+        programming_language = random.choice(programming_data)
+        return programming_language
 
 
 if __name__ == '__main__':
