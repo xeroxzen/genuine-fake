@@ -555,6 +555,17 @@ class GenuineFake:
         url_data = data_list.url
         url = random.choice(url_data)
         return url
+    
+    @staticmethod
+    def smartphone_brand():
+        """Return a smartphone brand
+        
+        >>> gf.smartphone_brand()
+        'Apple'
+        """
+        smartphone_data = data_list.smartphone_makers
+        smartphone = random.choice(smartphone_data)
+        return smartphone
 
 
 if __name__ == '__main__':
