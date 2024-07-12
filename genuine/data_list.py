@@ -1407,4 +1407,14 @@ payment_methods = [
 	'VISA', 'Master Card', 'EcoCash', 'OneMoney', 'Payoneer'
 ]
 
+currency = [
+    'USD', 'ZAR', 'GBP', 'EUR', 'AUD', 'CAD', 'JPY', 'CNY', 'INR', 'RUB', 'BRL', 'NGN', 'KES', 'GHS', 'ZWL', 'ZMW', 'ZIG'
+]
 
+colours = [
+    'Red', 'Blue', 'Green', 'Yellow', 'Orange', 'Purple', 'Pink', 'Brown', 'White', 'Black', 'Grey', 'Silver', 'Gold'
+]
+
+car_brands = [
+    'Toyota', 'Honda', 'Nissan', 'Ford', 'Chevrolet', 'Mercedes-Benz', 'BMW', 'Audi', 'Volkswagen', 'Hyundai', 'Kia', 'Mazda', 'Subaru', 'Lexus', 'Jeep', 'Volvo', 'Jaguar', 'Land Rover', 'Porsche', 'Ferrari', 'Maserati', 'Bentley', 'Rolls-Royce', 'Lamborghini', 'Bugatti'
+, 'Tesla', 'McLaren', 'Aston Martin', 'Alfa Romeo', 'Fiat', 'Peugeot', 'Renault', 'Citroen', 'Skoda', 'Seat', 'Opel', 'Dacia', 'Suzuki', 'Mitsubishi', 'Isuzu', 'Daihatsu', 'SsangYong', 'Mahindra', 'Tata', 'Chery', 'Geely', 'Great Wall', 'BYD', 'Changan', 'Haval', 'JAC', 'Lifan', 'Zotye', 'Brilliance', 'Changhe', 'Foton', 'JMC', 'King Long', 'Yutong', 'Golden Dragon', 'Higer', 'Zhongtong', 'Ankai', 'Sunlong', 'Youngman', 'Dongfeng', 'FAW', 'Chery', 'Haima', 'Jinbei']
