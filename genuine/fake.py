@@ -568,6 +568,61 @@ class GenuineFake:
         return smartphone
     
     @staticmethod
+    def ev():
+        """Return an electric vehicle brand
+        
+        >>> gf.ev()
+        'Tesla'
+        """
+        ev_data = data_list.ev_makers
+        ev = random.choice(ev_data)
+        return ev
+    
+    @staticmethod
+    def battery_maker():
+        """Return a battery maker
+        
+        >>> gf.battery_maker()
+        'Tesla'
+        """
+        battery_data = data_list.battery_makers
+        battery = random.choice(battery_data)
+        return battery
+    
+    @staticmethod
+    def ev_model():
+        """Return an electric vehicle model
+        
+        >>> gf.ev_models()
+        'Model S'
+        """
+        ev_model_data = data_list.ev_models
+        ev_model = random.choice(ev_model_data)
+        return ev_model
+    
+    @staticmethod
+    def yc_company():
+        """Return a Y Combinator company
+        
+        >>> gf.yc_companies()
+        'Airbnb'
+        """
+        yc_data = data_list.yc_companies
+        yc_company = random.choice(yc_data)
+        return yc_company
+    
+    @staticmethod
+    def american_president():
+        """Return an American president
+        
+        >>> gf.american_president()
+        'Joe Biden'
+        """
+        president_data = data_list.american_presidents
+        president = random.choice(president_data)
+        return president
+    
+    @staticmethod
     def programming_language():
         """Return a programming language
         
@@ -577,7 +632,392 @@ class GenuineFake:
         programming_data = data_list.programming_languages
         programming_language = random.choice(programming_data)
         return programming_language
-
+    
+    @staticmethod
+    def social_media():
+        """Return a social media platform
+        
+        >>> gf.social_media()
+        'Facebook'
+        """
+        social_media_data = data_list.social_media
+        social_media = random.choice(social_media_data)
+        return social_media
+    
+    @staticmethod
+    def sport():
+        """Return a sport
+        
+        >>> gf.sport()
+        'Football'
+        """
+        sport_data = data_list.sports
+        sport = random.choice(sport_data)
+        return sport
+    
+    @staticmethod
+    def food():
+        """Return a food item
+        
+        >>> gf.food()
+        'Sadza'
+        """
+        food_data = data_list.food
+        food = random.choice(food_data)
+        return food
+    
+    @staticmethod
+    def drink():
+        """Return a drink
+        
+        >>> gf.drink()
+        'Coca Cola'
+        """
+        drink_data = data_list.drinks
+        drink = random.choice(drink_data)
+        return drink
+    
+    @staticmethod
+    def animal():
+        """Return an animal
+        
+        >>> gf.animal()
+        'Lion'
+        """
+        animal_data = data_list.animals
+        animal = random.choice(animal_data)
+        return animal
+    
+    @staticmethod
+    def bird():
+        """Return a bird
+        
+        >>> gf.bird()
+        'Eagle'
+        """
+        bird_data = data_list.birds
+        bird = random.choice(bird_data)
+        return bird
+    
+    @staticmethod
+    def insect():
+        """Return an insect
+        
+        >>> gf.insect()
+        'Mosquito'
+        """
+        insect_data = data_list.insects
+        insect = random.choice(insect_data)
+        return insect
+    
+    @staticmethod
+    def fish():
+        """Return a fish
+        
+        >>> gf.fish()
+        'Tilapia'
+        """
+        fish_data = data_list.fish
+        fish = random.choice(fish_data)
+        return fish
+    
+    @staticmethod
+    def flower():
+        """Return a flower
+        
+        >>> gf.flower()
+        'Rose'
+        """
+        flower_data = data_list.flowers
+        flower = random.choice(flower_data)
+        return flower
+    
+    @staticmethod
+    def tree():
+        """Return a tree
+        
+        >>> gf.tree()
+        'Baobab'
+        """
+        tree_data = data_list.trees
+        tree = random.choice(tree_data)
+        return tree
+    
+    @staticmethod
+    def vegetable():
+        """Return a vegetable
+        
+        >>> gf.vegetable()
+        'Cabbage'
+        """
+        vegetable_data = data_list.vegetables
+        vegetable = random.choice(vegetable_data)
+        return vegetable
+    
+    @staticmethod
+    def fruit():
+        """Return a fruit
+        
+        >>> gf.fruit()
+        'Banana'
+        """
+        fruit_data = data_list.fruits
+        fruit = random.choice(fruit_data)
+        return fruit
+    
+    @staticmethod
+    def car_model():
+        """Return a car model
+        
+        >>> gf.car_model()
+        'Model S'
+        """
+        car_model_data = data_list.car_models
+        car_model = random.choice(car_model_data)
+        return car_model
+    
+    @staticmethod
+    def media_house():
+        """Return a media house
+        
+        >>> gf.media_house()
+        'ZBC'
+        """
+        media_house_data = data_list.media_houses
+        media_house = random.choice(media_house_data)
+        return media_house
+    
+    @staticmethod
+    def tv_station():
+        """Return a TV station
+        
+        >>> gf.tv_station()
+        'ZTV'
+        """
+        tv_station_data = data_list.tv_stations
+        tv_station = random.choice(tv_station_data)
+        return tv_station
+    
+    @staticmethod
+    def radio_station():
+        """Return a radio station
+        
+        >>> gf.radio_station()
+        'Star FM'
+        """
+        radio_station_data = data_list.radio_stations
+        radio_station = random.choice(radio_station_data)
+        return radio_station
+    
+    @staticmethod
+    def newspaper():
+        """Return a newspaper
+        
+        >>> gf.newspaper()
+        'The Herald'
+        """
+        newspaper_data = data_list.newspapers
+        newspaper = random.choice(newspaper_data)
+        return newspaper
+    
+    @staticmethod
+    def magazine():
+        """Return a magazine
+        
+        >>> gf.magazine()
+        'Zimbabwe Business Review'
+        """
+        magazine_data = data_list.magazines
+        magazine = random.choice(magazine_data)
+        return magazine
+    
+    @staticmethod
+    def book():
+        """Return a book
+        
+        >>> gf.book()
+        'The Alchemist'
+        """
+        book_data = data_list.books
+        book = random.choice(book_data)
+        return book
+    
+    @staticmethod
+    def author():
+        """Return an author
+        
+        >>> gf.author()
+        'Paulo Coelho'
+        """
+        author_data = data_list.authors
+        author = random.choice(author_data)
+        return author
+    
+    @staticmethod
+    def movie():
+        """Return a movie
+        
+        >>> gf.movie()
+        'The Matrix'
+        """
+        movie_data = data_list.movies
+        movie = random.choice(movie_data)
+        return movie
+    
+    @staticmethod
+    def actor():
+        """Return an actor
+        
+        >>> gf.actor()
+        'Will Smith'
+        """
+        actor_data = data_list.actors
+        actor = random.choice(actor_data)
+        return actor
+    
+    @staticmethod
+    def actress():
+        """Return an actress
+        
+        >>> gf.actress()
+        'Angelina Jolie'
+        """
+        actress_data = data_list.actresses
+        actress = random.choice(actress_data)
+        return actress
+    
+    @staticmethod
+    def song():
+        """Return a song
+        
+        >>> gf.song()
+        'Neria'
+        """
+        song_data = data_list.songs
+        song = random.choice(song_data)
+        return song
+    
+    @staticmethod
+    def artist():
+        """Return an artist
+        
+        >>> gf.artist()
+        'Oliver Mtukudzi'
+        """
+        artist_data = data_list.artists
+        artist = random.choice(artist_data)
+        return artist
+    
+    @staticmethod
+    def genre():
+        """Return a music genre
+        
+        >>> gf.genre()
+        'Jazz'
+        """
+        genre_data = data_list.genres
+        genre = random.choice(genre_data)
+        return genre
+    
+    @staticmethod
+    def sportsperson():
+        """Return a sportsperson
+        
+        >>> gf.sportsperson()
+        'Usain Bolt'
+        """
+        sportsperson_data = data_list.sportspersons
+        sportsperson = random.choice(sportsperson_data)
+        return sportsperson
+    
+    @staticmethod
+    def team():
+        """Return a sports team
+        
+        >>> gf.team()
+        'FC Barcelona'
+        """
+        team_data = data_list.teams
+        team = random.choice(team_data)
+        return team
+    
+    @staticmethod
+    def stadium():
+        """Return a stadium
+        
+        >>> gf.stadium()
+        'National Sports Stadium'
+        """
+        stadium_data = data_list.stadiums
+        stadium = random.choice(stadium_data)
+        return stadium
+    
+    @staticmethod
+    def event():
+        """Return a sports event
+        
+        >>> gf.event()
+        'Olympics'
+        """
+        event_data = data_list.events
+        event = random.choice(event_data)
+        return event
+    
+    @staticmethod
+    def festival():
+        """Return a festival
+        
+        >>> gf.festival()
+        'HIFA'
+        """
+        festival_data = data_list.festivals
+        festival = random.choice(festival_data)
+        return festival
+    
+    @staticmethod
+    def holiday():
+        """Return a holiday
+        
+        >>> gf.holiday()
+        'Christmas'
+        """
+        holiday_data = data_list.holidays
+        holiday = random.choice(holiday_data)
+        return holiday
+    
+    @staticmethod
+    def religion():
+        """Return a religion
+        
+        >>> gf.religion()
+        'Christianity'
+        """
+        religion_data = data_list.religions
+        religion = random.choice(religion_data)
+        return religion
+    
+    @staticmethod
+    def church():
+        """Return a church
+        
+        >>> gf.church()
+        'Catholic'
+        """
+        church_data = data_list.churches
+        church = random.choice(church_data)
+        return church
+    
+    @staticmethod
+    def seven_wonders():
+        """Return one of the seven wonders of the world
+        
+        >>> gf.seven_wonders()
+        'Great Wall of China'
+        """
+        wonders_data = data_list.seven_wonders
+        wonder = random.choice(wonders_data)
+        return wonder
+        
 
 if __name__ == '__main__':
     data = GenuineFake
