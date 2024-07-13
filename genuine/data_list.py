@@ -1464,3 +1464,7 @@ programming_languages = [
 media_houses = [
 	'Al Jazeera', 'BBC', 'CNN', 'Fox News', 'MSNBC', 'Sky News', 'ABC News', 'CBS News', 'NBC News', 'PBS News', 'The New York Times', 'The Washington Post', 'The Guardian', 'The Wall Street Journal', 'The Economist', 'The Financial Times', 'The Times', 'The Telegraph', 'The Independent', 'The Sun', 'The Daily Mail', 'The Mirror', 'The Express', 'The Star', 'The Daily Star'
 ]
+
+seven_wonders = [
+	'Great Wall of China', 'Petra', 'Christ the Redeemer', 'Machu Picchu', 'Chichen Itza', 'Roman Colosseum', 'Taj Mahal'
+]
