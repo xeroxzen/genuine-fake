@@ -1456,3 +1456,11 @@ yc_companies = [
 america_presidents = [
     	'George Washington', 'John Adams', 'Thomas Jefferson', 'James Madison', 'James Monroe', 'John Quincy Adams', 'Andrew Jackson', 'Martin Van Buren', 'William Henry Harrison', 'John Tyler', 'James K. Polk', 'Zachary Taylor', 'Millard Fillmore', 'Franklin Pierce', 'James Buchanan', 'Abraham Lincoln', 'Andrew Johnson', 'Ulysses S. Grant', 'Rutherford B. Hayes', 'James A. Garfield', 'Chester A. Arthur', 'Grover Cleveland', 'Benjamin Harrison', 'William McKinley', 'Theodore Roosevelt', 'William Howard Taft', 'Woodrow Wilson', 'Warren G. Harding', 'Calvin Coolidge', 'Herbert Hoover', 'Franklin D. Roosevelt', 'Harry S. Truman', 'Dwight D. Eisenhower', 'John F. Kennedy', 'Lyndon B. Johnson', 'Richard Nixon', 'Gerald Ford', 'Jimmy Carter', 'Ronald Reagan', 'George H. W. Bush', 'Bill Clinton', 'George W. Bush', 'Barack Obama', 'Donald Trump', 'Joe Biden'
 ]
+
+programming_languages = [
+	'ada', 'basic', 'c', 'c++', 'c#', 'cobol', 'd', 'delphi', 'fortran', 'go', 'groovy', 'haskell', 'java', 'javascript', 'julia', 'kotlin', 'lisp', 'lua', 'matlab', 'objective-c', 'pascal', 'perl', 'php', 'prolog', 'python', 'r', 'ruby', 'rust', 'scala', 'scheme', 'shell', 'smalltalk', 'swift', 'typescript', 'verilog', 'vhdl', 'visual basic'
+]
+
+media_houses = [
+	'Al Jazeera', 'BBC', 'CNN', 'Fox News', 'MSNBC', 'Sky News', 'ABC News', 'CBS News', 'NBC News', 'PBS News', 'The New York Times', 'The Washington Post', 'The Guardian', 'The Wall Street Journal', 'The Economist', 'The Financial Times', 'The Times', 'The Telegraph', 'The Independent', 'The Sun', 'The Daily Mail', 'The Mirror', 'The Express', 'The Star', 'The Daily Star'
+]
