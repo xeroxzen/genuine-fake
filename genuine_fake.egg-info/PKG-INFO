@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
-Name: Genuine-fake
-Version: 1.2.21
+Name: genuine-fake
+Version: 1.2.23
 Summary: Get genuine data for your testing requirements.
 Home-page: https://github.com/xeroxzen/genuine-fake
 Author: Andile Jaden Mbele
@@ -9,8 +9,14 @@ License: MIT
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python :: 3
 Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
 Description-Content-Type: text/markdown
-License-File: LICENSE
+License-File: LICENSE.backup
 
 # Genuine-Fake documentation
 
@@ -28,7 +34,7 @@ Well, truthfully the inspiration came from me trying to challenge myself and be 
 
 ### How It Works
 
-### ```Installation``` 
+### `Installation`
 
 ```sh
 $ pip install genuine-fake
@@ -36,24 +42,27 @@ $ pip install genuine-fake
 
 ### Different Environments
 
-#### ```MacOS and Linux Terminal```
+#### `MacOS and Linux Terminal`
+
 ```python
 $ pip3 install Genuine-fake
 $ python3
 >>>
 ```
 
-#### ```Windows Command Prompt```
+#### `Windows Command Prompt`
+
 ```cmd
 C:\Users\andil> pip install genuine-fake
 C:\Users\andil> python
 ```
+
 ```py
 >>> from genuine.fake import GenuineFake as gf
 >>>
 ```
 
-### ```In Action```
+### `In Action`
 
 ```python
 >>> from genuine.fake import GenuineFake as gf

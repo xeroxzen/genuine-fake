@@ -9,8 +9,8 @@ README = (HERE / "README.md").read_text()
 
 # This call to setup() does all the work
 setup(
-    name="Genuine-fake",
-    version="1.2.22",
+    name="genuine-fake",
+    version="1.2.23",
     description="Get genuine data for your testing requirements.",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -22,7 +22,14 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Development Status :: 5 - Production/Stable",
+        "Intended Audience :: Developers",
+        "Topic :: Software Development :: Testing",
+        "Topic :: Software Development :: Libraries :: Python Modules",
     ],
     packages=["genuine"],
     include_package_data=True,
+    python_requires=">=3.7",
+    license_files=None,
 )
