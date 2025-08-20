@@ -17,7 +17,7 @@ setup(
     url="https://github.com/xeroxzen/genuine-fake",
     author="Andile Jaden Mbele",
     author_email="andilembele020@gmail.com",
-    license="MIT",
+    # license="MIT",  # Removed to avoid license-file metadata issues
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
